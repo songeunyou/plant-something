@@ -507,9 +507,9 @@ var ImageList = [
     {
         img: a127
     },
-    {
-        img: a128
-    },
+    // {
+    //     img: a128
+    // },
 
 ]
 
