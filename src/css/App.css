@@ -3,12 +3,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: black;
 }
 
 .test-square {
   background: green;
   width: 60px;
   height: 60px;
+}
+
+.image-card {
+  width: 60px;
+  height: 60px;
+}
+.image-card img {
+  width: auto;
+  height: auto;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=App.css.map */

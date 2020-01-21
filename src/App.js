@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import './css/App.css';
 
-import one from "./Media/1.png";
+import ImageCard from './components/ImageCard.js';
+import ImageList from './components/ImageList.js';
+import './css/App.css';
 
 class App extends Component {
 
@@ -16,7 +17,7 @@ class App extends Component {
         return (
             <div className="App">
                 <div>
-                <img className="test-square" src={one}/>
+                {ImageList.map(image => <ImageCard image={image.img}/>)}
                     Blank State
                 </div>
             </div>
