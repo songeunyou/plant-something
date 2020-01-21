@@ -10,65 +10,65 @@
 .text-section {
     height: 100vh;
     padding: 0px 200px;
-    margin: 20% 0px 0px 0px;
+    margin: 13% 0px 0px 0px;
 
     color: red;
     position: absolute;
     // z-index: 1;
     pointer-events: none;
 
-    animation-name: textSection;
-    animation-duration: 3s;
-
-    @keyframes textSection {
-        0% {
-            opacity: 0;
-            transform: translateY(100px);
-        }
-        50% {
-            opacity: 0;
-            transform: translateY(100px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0px);
-        }
-    }
+    // animation-name: textSection;
+    // animation-duration: 3s;
+    //
+    // @keyframes textSection {
+    //     0% {
+    //         opacity: 0;
+    //         transform: translateY(100px);
+    //     }
+    //     50% {
+    //         opacity: 0;
+    //         transform: translateY(100px);
+    //     }
+    //     100% {
+    //         opacity: 1;
+    //         transform: translateY(0px);
+    //     }
+    // }
 
     h1 {
         font-family: amador, sans-serif;
         font-weight: 400;
         font-style: normal;
         font-size: 120px;
-        margin-bottom: 30px;
+        // margin-bottom: 30px;
     }
     p {
         width: auto;
         font-size: 16px;
 
-        animation-name: paragraph;
-        animation-duration: 5s;
-    }
-
-    @keyframes paragraph {
-        0% {
-            opacity: 0;
-            transform: translateY(40px);
-        }
-        70% {
-            opacity: 0;
-            transform: translateY(40px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0px);
-        }
+        // animation-name: paragraph;
+        // animation-duration: 5s;
+        //
+        // @keyframes paragraph {
+        //     0% {
+        //         opacity: 0;
+        //         transform: translateY(40px);
+        //     }
+        //     70% {
+        //         opacity: 0;
+        //         transform: translateY(40px);
+        //     }
+        //     100% {
+        //         opacity: 1;
+        //         transform: translateY(0px);
+        //     }
+        // }
     }
 }
 
 .image-section {
-    width: 1080px;
-    height: 420px;
+    width: 100vw;
+    height: 660px;
     position: fixed;
     display: flex;
     flex-wrap: wrap;
@@ -78,6 +78,7 @@
     width: 60px;
     height: 60px;
     margin: 0px;
+    cursor: pointer;
 
     img {
         width: 60px;

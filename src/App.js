@@ -38,7 +38,8 @@ class App extends Component {
                 </div>*/}
 
                 <div className="image-section">
-                    {ImageList.map(image => <ImageCard image={image.img}/>)}
+                    {ImageList.map(image => <ImageCard key={image.img}/>)}
+                    {ImageList.map(image => <ImageCard key={image.img}/>)}
                 </div>
             </div>
         );
