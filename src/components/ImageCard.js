@@ -58,7 +58,8 @@ class ImageCard extends Component {
         let {color, mode} = this.state;
 
         const imageCardStyle = {
-            background: color
+            background: color,
+            opacity: this.state.mode === "black" ? 0 : 1
         }
 
         const imageStyle = {

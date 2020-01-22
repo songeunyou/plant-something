@@ -27,6 +27,25 @@
   font-size: 16px;
 }
 
+.move-around {
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 4px;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .image-section {
   width: 100vw;
   height: 840px;

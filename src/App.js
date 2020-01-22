@@ -53,6 +53,10 @@ class App extends Component {
                     {ImageList.map(image => <ImageCard key={image.img} countUp={this.countUp.bind(this)}/>)}
                     {ImageList.map(image => <ImageCard key={image.img} countUp={this.countUp.bind(this)}/>)}
                 </div>
+
+                <div className="move-around">
+                    MOVE AROUND
+                </div>
             </div>
         );
     }
