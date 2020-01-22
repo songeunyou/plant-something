@@ -11,8 +11,9 @@
   height: 100vh;
   padding: 0px 200px;
   margin: 13% 0px 0px 0px;
-  color: red;
+  color: "#6B0000";
   position: absolute;
+  z-index: 1;
   pointer-events: none;
 }
 .text-section h1 {
@@ -28,7 +29,7 @@
 
 .image-section {
   width: 100vw;
-  height: 660px;
+  height: 840px;
   position: fixed;
   display: flex;
   flex-wrap: wrap;

@@ -18,6 +18,7 @@ class ImageCard extends Component {
     random() {
         if (this.state.mode === "black") {
             //black --> photo
+            this.props.countUp();
             this.randomFace();
         } else if (this.state.mode === "photo") {
             //photo --> solid
@@ -31,7 +32,7 @@ class ImageCard extends Component {
         var face;
 
         const min=0;
-        const max=127;
+        const max=174;
         const random = Math.round(Math.random() * (+max - +min) + +min);
         face = imageList[random].img;
 
