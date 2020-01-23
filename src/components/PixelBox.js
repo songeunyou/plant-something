@@ -23,6 +23,14 @@ class FadeInBox extends Component {
     }
 }
 
+class NothingBox extends Component {
+    render() {
+        return(
+            <div className="nothing-box"/>
+        );
+    }
+}
+
 class PixelBox extends Component {
 
     constructor(props) {
@@ -37,8 +45,14 @@ class PixelBox extends Component {
 
         return (
             <div className="done">
+
+
                 <div className="done-row">
-                    { arr.map(i => i === 1 || i === 10 ? "" : <FadeInBox num={i}/>) }
+                    { arr.map(i => i === 1 || i === 4 || i === 5 || i === 6 ||i === 7 || i === 10 ? <NothingBox/> : <FadeInBox/>) }
+                </div>
+
+                <div className="done-row">
+                    { arr.map(i => i === 5 || i === 6 ? <NothingBox/> : <FadeInBox/>) }
                 </div>
                 <div className="done-row">
                     { arr.map(i => <FadeInBox/>) }
@@ -47,8 +61,22 @@ class PixelBox extends Component {
                     { arr.map(i => <FadeInBox/>) }
                 </div>
                 <div className="done-row">
-                    { arr.map(i => i === 1 || i === 10 ? "" : <FadeInBox/>) }
+                    { arr.map(i => i === 1 || i === 10 ? <NothingBox/> : <FadeInBox/>) }
                 </div>
+
+                <div className="done-row">
+                    { arr.map(i => i === 1 || i === 2 || i === 9 || i === 10 ? <NothingBox/> : <FadeInBox/>) }
+                </div>
+
+                <div className="done-row">
+                    { arr.map(i => i === 1 || i === 2 || i === 3 || i === 8 || i === 9 || i === 10 ? <NothingBox/> : <FadeInBox/>) }
+                </div>
+
+                <div className="done-row">
+                    { arr.map(i => i === 1 || i === 2 || i === 3 || i === 4 || i === 7 || i === 8 || i === 9 || i === 10 ? <NothingBox/> : <FadeInBox/>) }
+                </div>
+
+
                 <p className="made-it">You Made It</p>
                 <p className="paragraph p1">I wanted to show you how benign these faces are</p>
                 <p className="paragraph p2">They really are faces, aren't they? Parts of faces</p>

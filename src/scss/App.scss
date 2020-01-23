@@ -45,7 +45,7 @@
     align-items: center;
     justify-content: center;
     width: 600px;
-    height: 240px;
+    height: 480px;
     position: absolute;
     z-index: 1;
     pointer-events: none;
@@ -64,6 +64,8 @@
         min-height: 60px;
         padding: 0px;
         background: black;
+        // background: red;
+        // border: solid 1px black;
         opacity: 0;
 
         animation-name: fadeInBox;
@@ -78,6 +80,12 @@
                 opacity: 1;
             }
         }
+    }
+
+    .nothing-box {
+        width: 60px;
+        min-width: 60px;
+        min-height: 60px;
     }
 
 
