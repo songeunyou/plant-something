@@ -7,26 +7,6 @@
   overflow: scroll;
 }
 
-.text-section {
-  height: 100vh;
-  padding: 0px 200px;
-  margin: 13% 0px 0px 0px;
-  color: "#6B0000";
-  position: absolute;
-  z-index: 1;
-  pointer-events: none;
-}
-.text-section h1 {
-  font-family: amador, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 120px;
-}
-.text-section p {
-  width: auto;
-  font-size: 16px;
-}
-
 .move-around {
   color: white;
   font-weight: bolder;
@@ -43,6 +23,79 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+.success {
+  font-family: amador, sans-serif;
+  font-weight: 400;
+  color: #A60013;
+  font-style: normal;
+  font-size: 120px;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.done {
+  font-family: amador, sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  width: 600px;
+  height: 240px;
+  background: black;
+  color: white;
+  font-size: 60px;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  animation-name: amador;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+@keyframes amador {
+  0% {
+    width: 0px;
+  }
+  100% {
+    opacity: 1;
+    width: 600px;
+  }
+}
+.done p {
+  animation-name: youveMadeIt;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes youveMadeIt {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+    color: blue;
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(20px);
+    color: blue;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0px);
+    color: red;
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(0px);
+    color: red;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+    color: blue;
   }
 }
 
