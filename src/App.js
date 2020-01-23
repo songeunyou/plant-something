@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import ImageCard from './components/ImageCard.js';
 import ImageList from './components/ImageList.js';
+import PixelBox from './components/PixelBox.js';
+
 import './css/App.css';
 
 class App extends Component {
@@ -21,19 +23,10 @@ class App extends Component {
     }
 
     render() {
-
-        var title = {
-            opacity: this.state.count >= 240 ? 1 : 0
-        }
-
-        console.log(this.state.count);
-
         return (
             <div className="App">
-                {this.state.count >= 80 ?
-                    <div className="done" style={title}>
-                        <p>You Made It</p>
-                    </div>
+                {this.state.count >= 150 ?
+                    <PixelBox/>
                     :
                     ""}
 
