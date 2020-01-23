@@ -93,30 +93,6 @@
         opacity: 0%;
     }
 
-    .paragraph {
-        // font-family: amador, sans-serif;
-        font-size: 28px;
-        font-size: 16px;
-        position: absolute;
-        animation-name: youveMadeIt;
-        animation-duration: 4s;
-        animation-fill-mode: forwards;
-        opacity: 0%;
-        color: white !important;
-    }
-
-    .p1 {
-        animation-delay: 5.5s;
-    }
-
-    .p2 {
-        animation-delay: 9.5s;
-    }
-
-    .p3 {
-        animation-delay: 13.5s;
-    }
-
     @keyframes youveMadeIt {
         0% {
             opacity: 0;
@@ -137,6 +113,51 @@
             opacity: 0;
             transform: translateY(-20px);
             color: blue;
+        }
+    }
+
+    .paragraph {
+        // font-family: amador, sans-serif;
+        font-size: 28px;
+        font-size: 16px;
+        position: absolute;
+        animation-name: paragraph;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        opacity: 0%;
+        color: white;
+        // font-weight: bolder;
+        letter-spacing: 2px;
+    }
+
+    .p1 {
+        animation-delay: 5.5s;
+    }
+
+    .p2 {
+        animation-delay: 9.5s;
+    }
+
+    .p3 {
+        animation-delay: 13.5s;
+    }
+
+    @keyframes paragraph {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        25% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+        75% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-20px);
         }
     }
 }
