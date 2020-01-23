@@ -38,16 +38,12 @@
 }
 
 .done {
-  font-family: amador, sans-serif;
-  font-weight: 400;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 600px;
   height: 240px;
-  color: white;
-  font-size: 60px;
   position: absolute;
   z-index: 1;
   pointer-events: none;
@@ -78,13 +74,35 @@
     opacity: 1;
   }
 }
-.done p {
+.done .made-it {
+  font-family: amador, sans-serif;
+  font-weight: 400;
+  font-size: 46px;
   position: absolute;
   animation-name: youveMadeIt;
   animation-duration: 3.6s;
   animation-fill-mode: forwards;
   animation-delay: 2s;
   opacity: 0%;
+}
+.done .paragraph {
+  font-size: 28px;
+  font-size: 16px;
+  position: absolute;
+  animation-name: youveMadeIt;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  opacity: 0%;
+  color: white !important;
+}
+.done .p1 {
+  animation-delay: 5.5s;
+}
+.done .p2 {
+  animation-delay: 9.5s;
+}
+.done .p3 {
+  animation-delay: 13.5s;
 }
 @keyframes youveMadeIt {
   0% {

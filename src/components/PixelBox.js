@@ -49,7 +49,10 @@ class PixelBox extends Component {
                 <div className="done-row">
                     { arr.map(i => i === 1 || i === 10 ? "" : <FadeInBox/>) }
                 </div>
-                <p>You Made It</p>
+                <p className="made-it">You Made It</p>
+                <p className="paragraph p1">I wanted to show you how benign these faces are</p>
+                <p className="paragraph p2">They really are faces, aren't they? Parts of faces</p>
+                <p className="paragraph p3">They don't hurt a bit when they're in pieces</p>
             </div>
         );
     }
