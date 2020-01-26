@@ -25,11 +25,11 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                {this.state.count >= 150 ?
+                {/*{this.state.count >= 150 ?
                     <PixelBox/>
                     :
-                    ""}
-                    
+                    ""}*/}
+
                 <div className="image-section">
                     {ImageList.map(image => <ImageCard key={image.img} countUp={this.countUp.bind(this)}/>)}
                     {ImageList.map(image => <ImageCard key={image.img} countUp={this.countUp.bind(this)}/>)}

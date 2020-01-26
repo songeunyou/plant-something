@@ -151,25 +151,51 @@
     position: fixed;
     display: flex;
     flex-wrap: wrap;
+    -webkit-transform: rotateX(55deg) rotateZ(45deg);
+    -webkit-transform-style: preserve-3d;
 }
 
 .image-card {
-    width: 60px;
-    height: 60px;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
     margin: 0px;
     cursor: pointer;
 
-    img {
-        width: 60px;
-        height: 60px;
-        margin: 0px;
-        background-size: cover;
-        // opacity: 0;
-        // transition: 3s;
+    .box {
+        border: solid 1px #391D18;
+        position: absolute;
+        border-radius: 3px;
+        transform-style: preserve-3d;
+        -webkit-transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+        background: #391D18;
+    }
 
-        // &:hover {
-        //     opacity: 1;
-        //     transition: 0.1s;
-        // }
+    .front {
+        width: 80px;
+        height: 20px;
+
+        transform-origin: 100% 0%;
+        -webkit-transform-origin: 100% 0%;
+        -moz-transform-origin: 100% 0%;
+
+        transform: rotateX(-90deg) translate(-80px, 80px);
+        -webkit-transform: rotateX(-90deg) translate(-80px, 79px);
+        -moz-transform: rotateX(-90deg) translate(-80px, 80px);
+
+    }
+
+    .right {
+        width: 20px;
+        height: 80px;
+
+        transform-origin: 0%;
+        -webkit-transform-origin: 0%;
+        -moz-transform-origin: 0%;
+
+        transform: rotateY(90deg) translate(80px, -81px);
+        -webkit-transform: rotateY(90deg) translate(79px, -80px);
+        -moz-transform: rotateY(90deg) translate(80px, -80px);
     }
 }

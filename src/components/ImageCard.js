@@ -19,12 +19,12 @@ class ImageCard extends Component {
         if (this.state.mode === "black") {
             //black --> photo
             this.props.countUp();
-            this.randomFace();
+            this.randomColor();
         } else if (this.state.mode === "photo") {
             //photo --> solid
             this.randomColor();
         } else {
-            this.randomFace();
+            this.randomColor();
         }
     }
 
@@ -71,7 +71,8 @@ class ImageCard extends Component {
                 style={imageCardStyle}
                 onMouseOver={() => this.random()}
                 onClick={() => this.random()}>
-                <img src={this.state.image} style={imageStyle} alt=""/>
+                <div className="box front"/>
+                <div className="box right"/>
             </div>
         );
     }
