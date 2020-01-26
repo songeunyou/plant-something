@@ -25,6 +25,7 @@
   width: 60px;
   height: 60px;
   border-radius: 30px;
+  z-index: 2;
 }
 .plant-container .plant1 .flower .petal1 {
   position: absolute;
@@ -47,10 +48,11 @@
   height: 80px;
   bottom: -10px;
   border-radius: 30px;
+  z-index: 2;
 }
 .plant-container .plant1 .leaf {
   position: absolute;
-  background: #590009;
+  background: #450007;
   width: 14px;
   height: 32px;
   border-radius: 50%;
@@ -96,10 +98,76 @@
   width: 40px;
   height: 110px;
   bottom: -35px;
-  border-radius: 30px;
+  border-radius: 100% 100% 40px 40px;
 }
 .plant-container .plant3 {
-  background: purple;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.plant-container .plant3 .flower {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff1c77;
+  width: 16px;
+  height: 40px;
+  border-radius: 100%;
+  z-index: 4;
+}
+.plant-container .plant3 .flower .petal {
+  position: absolute;
+  background: #ff1c77;
+  border-radius: 100%;
+}
+.plant-container .plant3 .flower .petal1 {
+  width: 14px;
+  height: 38px;
+  transform: translate(9px, -5px) rotate(-35deg);
+}
+.plant-container .plant3 .flower .petal2 {
+  width: 14px;
+  height: 38px;
+  transform: translate(-9px, -5px) rotate(35deg);
+}
+.plant-container .plant3 .flower .petal3 {
+  width: 12px;
+  height: 30px;
+  transform: translate(15px, -13px) rotate(-65deg);
+}
+.plant-container .plant3 .flower .petal4 {
+  width: 12px;
+  height: 30px;
+  transform: translate(-15px, -13px) rotate(65deg);
+}
+.plant-container .plant3 .stem {
+  position: absolute;
+  bottom: 0px;
+  width: 4px;
+  height: 80px;
+  background: #30001b;
+  z-index: 4;
+}
+.plant-container .plant3 .leaf {
+  position: absolute;
+  bottom: 10px;
+  background: #40001a;
+  width: 24px;
+  height: 30px;
+  border-radius: 2px;
+}
+.plant-container .plant3 .leaf .stripe {
+  width: 24px;
+  height: 3px;
+  background: brown;
+  margin: 5px 0px;
+}
+.plant-container .plant3 .left-leaf {
+  transform: translate(-10px) rotate(-30deg) skew(-30deg);
+}
+.plant-container .plant3 .right-leaf {
+  transform: translate(10px) rotate(30deg) skew(30deg);
 }
 
 /*# sourceMappingURL=Plant.css.map */

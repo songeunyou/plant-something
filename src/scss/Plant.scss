@@ -10,8 +10,6 @@
     .plant {
         position: relative;
         z-index: 4;
-        // width: 10px;
-        // height: 60px;
     }
 
     .plant1 {
@@ -28,6 +26,7 @@
             width: 60px;
             height: 60px;
             border-radius: 30px;
+            z-index: 2;
 
             .petal1 {
                 position: absolute;
@@ -53,12 +52,12 @@
             height: 80px;
             bottom: -10px;
             border-radius: 30px;
-
+            z-index: 2;
         }
 
         .leaf {
             position: absolute;
-            background: #590009;
+            background: #450007;
             width: 14px;
             height: 32px;
             border-radius: 50%;
@@ -111,21 +110,89 @@
             width: 40px;
             height: 110px;
             bottom: -35px;
-            border-radius: 30px;
+            border-radius: 100% 100% 40px 40px;
 
         }
-
-        // .leaf {
-        //     position: absolute;
-        //     background: green;
-        //     width: 14px;
-        //     height: 32px;
-        //     border-radius: 30px;
-        //     transform: translate(-12px, -50px) rotate(40deg);
-        // }
     }
 
     .plant3 {
-        background: purple;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        .flower {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ff1c77;
+            width: 16px;
+            height: 40px;
+            border-radius: 100%;
+            z-index: 4;
+
+            .petal {
+                position: absolute;
+                background: #ff1c77;
+                border-radius: 100%;
+            }
+
+            .petal1 {
+                width: 14px;
+                height: 38px;
+                transform: translate(9px, -5px) rotate(-35deg);
+            }
+
+            .petal2 {
+                width: 14px;
+                height: 38px;
+                transform: translate(-9px, -5px) rotate(35deg);
+            }
+
+            .petal3 {
+                width: 12px;
+                height: 30px;
+                transform: translate(15px, -13px) rotate(-65deg);
+            }
+
+            .petal4 {
+                width: 12px;
+                height: 30px;
+                transform: translate(-15px, -13px) rotate(65deg);
+            }
+        }
+
+        .stem {
+            position: absolute;
+            bottom: 0px;
+            width: 4px;
+            height: 80px;
+            background: #30001b;
+            z-index: 4;
+        }
+
+        .leaf {
+            position: absolute;
+            bottom: 10px;
+            background: #40001a;
+            width: 24px;
+            height: 30px;
+            border-radius: 2px;
+
+            .stripe {
+                width: 24px;
+                height: 3px;
+                background: brown;
+                margin: 5px 0px;
+            }
+        }
+
+        .left-leaf {
+            transform: translate(-10px) rotate(-30deg) skew(-30deg);
+        }
+
+        .right-leaf {
+            transform: translate(10px) rotate(30deg) skew(30deg);
+        }
     }
 }

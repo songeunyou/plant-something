@@ -37,7 +37,25 @@ class Plant2 extends Component {
 class Plant3 extends Component {
     render() {
         return(
-            <div className="plant plant3"/>
+            <div className="plant plant3">
+                <div className="stem"/>
+                <div className="leaf left-leaf">
+                    <div className="stripe"/>
+                    <div className="stripe"/>
+                    <div className="stripe"/>
+                </div>
+                <div className="leaf right-leaf">
+                    <div className="stripe"/>
+                    <div className="stripe"/>
+                    <div className="stripe"/>
+                </div>
+                <div className="flower">
+                    <div className="petal petal1"/>
+                    <div className="petal petal2"/>
+                    <div className="petal petal3"/>
+                    <div className="petal petal4"/>
+                </div>
+            </div>
         );
     }
 }

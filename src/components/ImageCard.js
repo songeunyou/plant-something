@@ -59,7 +59,7 @@ class ImageCard extends Component {
                 <div className="box top"
                     style={imageCardColor}/>
 
-                <Plant/>
+                {stage === 0 || stage === 1 ? "" : <Plant/>}
             </div>
         );
     }
