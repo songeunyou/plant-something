@@ -9,37 +9,18 @@ class ImageCard extends Component {
         super(props);
 
         this.state = {
-            mode: "black",
+            stage: 0,
             color: "black",
             image: ""
         };
     }
 
     random() {
-        if (this.state.mode === "black") {
-            //black --> photo
-            this.props.countUp();
-            this.randomColor();
-        } else if (this.state.mode === "photo") {
-            //photo --> solid
-            this.randomColor();
-        } else {
-            this.randomColor();
-        }
-    }
-
-    randomFace() {
-        var face;
-
-        const min=0;
-        const max=174;
-        const random = Math.round(Math.random() * (+max - +min) + +min);
-        face = imageList[random].img;
-
+        this.props.countUp();
+        this.randomColor();
         this.setState({
-            image: face,
-            mode: "photo"
-        });
+            stage: this.state.stage + 1
+        })
     }
 
     randomColor() {
@@ -55,24 +36,26 @@ class ImageCard extends Component {
     }
 
     render() {
-        let {color, mode} = this.state;
+        let {color, stage} = this.state;
 
         const imageCardStyle = {
-            background: color,
-            opacity: this.state.mode === "black" ? 0 : 1
+            opacity: stage === 0 ? 0 : 1
         }
 
-        const imageStyle = {
-            opacity: mode === "photo" ? 0 : 1
+        const imageCardColor = {
+            background: color
         }
 
         return (
             <div className="image-card"
                 style={imageCardStyle}
-                onMouseOver={() => this.random()}
+                onMouseEnter={() => this.random()}
                 onClick={() => this.random()}>
+                <div className="plant"/>
                 <div className="box front"/>
                 <div className="box right"/>
+                <div className="box top"
+                    style={imageCardColor}/>
             </div>
         );
     }

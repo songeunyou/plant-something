@@ -150,13 +150,16 @@
   cursor: pointer;
 }
 .image-card .box {
-  border: solid 1px #391D18;
   position: absolute;
   border-radius: 3px;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   background: #391D18;
+}
+.image-card .top {
+  width: 80px;
+  height: 80px;
 }
 .image-card .front {
   width: 80px;
@@ -177,6 +180,18 @@
   transform: rotateY(90deg) translate(80px, -81px);
   -webkit-transform: rotateY(90deg) translate(79px, -80px);
   -moz-transform: rotateY(90deg) translate(80px, -80px);
+}
+.image-card .plant {
+  position: absolute;
+  width: 30px;
+  height: 120px;
+  border: solid 2px red;
+  border-radius: 15px;
+  background-color: "lilac" !important;
+  overflow: auto;
+  -webkit-transform: rotateX(-20deg) rotateY(20deg) rotateZ(-42deg) translate(20px, -40px);
+  z-index: 2;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=App.css.map */
