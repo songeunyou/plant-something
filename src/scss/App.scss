@@ -175,6 +175,7 @@
     .top {
         width: 80px;
         height: 80px;
+        z-index: 1;
     }
 
     .front {
@@ -202,18 +203,5 @@
         transform: rotateY(90deg) translate(80px, -81px);
         -webkit-transform: rotateY(90deg) translate(79px, -80px);
         -moz-transform: rotateY(90deg) translate(80px, -80px);
-    }
-
-    .plant {
-        position: absolute;
-        width: 30px;
-        height: 120px;
-        border: solid 2px red;
-        border-radius: 15px;
-        background-color: "lilac" !important;
-        overflow: auto;
-        -webkit-transform: rotateX(-20deg) rotateY(20deg) rotateZ(-42deg) translate(20px, -40px);
-        z-index: 2;
-        pointer-events: none;
     }
 }

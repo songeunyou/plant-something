@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Plant from './Plant.js';
+
 import heart from '../media/heart.png';
 import imageList from './ImageList.js';
 import colorList from './ColorList.js';
@@ -51,7 +53,9 @@ class ImageCard extends Component {
                 style={imageCardStyle}
                 onMouseEnter={() => this.random()}
                 onClick={() => this.random()}>
-                <div className="plant"/>
+                
+                <Plant/>
+
                 <div className="box front"/>
                 <div className="box right"/>
                 <div className="box top"

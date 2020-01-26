@@ -1,0 +1,67 @@
+.plant-container {
+  position: absolute;
+  overflow: auto;
+  transform: none;
+  -webkit-transform: rotateX(140deg) rotateY(140deg) rotateZ(-33deg) translate(0px, 60px);
+  pointer-events: none;
+  overflow: visible;
+  z-index: 4;
+}
+.plant-container .plant {
+  position: relative;
+  z-index: 4;
+}
+.plant-container .plant1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: blue;
+}
+.plant-container .plant1 .flower {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: pink;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+.plant-container .plant1 .flower .petal1 {
+  position: absolute;
+  background: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+}
+.plant-container .plant1 .flower .petal2 {
+  position: absolute;
+  background: blue;
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+}
+.plant-container .plant1 .stem {
+  position: absolute;
+  background: brown;
+  width: 4px;
+  height: 80px;
+  bottom: -10px;
+  border-radius: 30px;
+}
+.plant-container .plant1 .leaf {
+  position: absolute;
+  background: green;
+  width: 14px;
+  height: 32px;
+  border-radius: 30px;
+  transform: translate(-12px, -50px) rotate(40deg);
+}
+.plant-container .plant2 {
+  background: pink;
+}
+.plant-container .plant3 {
+  background: purple;
+}
+
+/*# sourceMappingURL=Plant.css.map */
