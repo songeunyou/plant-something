@@ -38,65 +38,98 @@
 }
 
 .done {
-  font-family: amador, sans-serif;
-  font-weight: 400;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding-top: 20px;
   width: 600px;
   height: 240px;
-  background: black;
-  color: white;
-  font-size: 60px;
   position: absolute;
   z-index: 1;
   pointer-events: none;
-  animation-name: amador;
-  animation-duration: 0.4s;
-  animation-fill-mode: forwards;
-  overflow: hidden;
 }
-@keyframes amador {
+.done .done-row {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.done .fade-in-box {
+  width: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 0px;
+  background: black;
+  opacity: 0;
+  animation-name: fadeInBox;
+  animation-fill-mode: forwards;
+  animation-duration: 0.4s;
+}
+@keyframes fadeInBox {
   0% {
-    width: 0px;
+    opacity: 0;
   }
   100% {
     opacity: 1;
-    width: 600px;
   }
 }
-.done p {
+.done .made-it {
+  color: white;
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-size: 16px;
+  position: absolute;
   animation-name: youveMadeIt;
-  animation-duration: 4s;
+  animation-duration: 3.6s;
   animation-fill-mode: forwards;
+  animation-delay: 2s;
+  opacity: 0%;
 }
 @keyframes youveMadeIt {
   0% {
     opacity: 0;
     transform: translateY(20px);
-    color: blue;
+    color: #82220a;
   }
-  20% {
-    opacity: 0;
-    transform: translateY(20px);
-    color: blue;
-  }
-  50% {
+  25% {
     opacity: 1;
     transform: translateY(0px);
     color: red;
+    color: white;
   }
-  70% {
+  75% {
     opacity: 1;
     transform: translateY(0px);
     color: red;
+    color: white;
   }
   100% {
     opacity: 0;
     transform: translateY(-20px);
-    color: blue;
+    color: #82220a;
   }
+}
+.done .paragraph {
+  font-size: 28px;
+  font-size: 16px;
+  position: absolute;
+  animation-name: youveMadeIt;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  opacity: 0%;
+  color: white;
+  font-weight: bolder;
+  letter-spacing: 1px;
+}
+.done .p1 {
+  animation-delay: 5.5s;
+}
+.done .p2 {
+  animation-delay: 9.5s;
+}
+.done .p3 {
+  animation-delay: 13.5s;
 }
 
 .image-section {
