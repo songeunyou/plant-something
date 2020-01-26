@@ -21,7 +21,14 @@ class Plant1 extends Component {
 class Plant2 extends Component {
     render() {
         return(
-            <div className="plant plant2"/>
+            <div className="plant plant2">
+                <div className="stem"/>
+                <div className="leaf"/>
+                <div className="flower">
+                    <div className="petal1"/>
+                    <div className="petal2"/>
+                </div>
+            </div>
         );
     }
 }

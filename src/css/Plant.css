@@ -15,7 +15,6 @@
   position: relative;
   display: flex;
   justify-content: center;
-  background: blue;
 }
 .plant-container .plant1 .flower {
   position: absolute;
@@ -58,7 +57,41 @@
   transform: translate(-12px, -50px) rotate(40deg);
 }
 .plant-container .plant2 {
-  background: pink;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.plant-container .plant2 .flower {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+.plant-container .plant2 .flower .petal1 {
+  position: absolute;
+  background: purple;
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+}
+.plant-container .plant2 .flower .petal2 {
+  position: absolute;
+  background: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+}
+.plant-container .plant2 .stem {
+  position: absolute;
+  background: blue;
+  width: 40px;
+  height: 110px;
+  bottom: -35px;
+  border-radius: 30px;
 }
 .plant-container .plant3 {
   background: purple;

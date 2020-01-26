@@ -53,13 +53,13 @@ class ImageCard extends Component {
                 style={imageCardStyle}
                 onMouseEnter={() => this.random()}
                 onClick={() => this.random()}>
-                
-                <Plant/>
 
                 <div className="box front"/>
                 <div className="box right"/>
                 <div className="box top"
                     style={imageCardColor}/>
+
+                <Plant/>
             </div>
         );
     }

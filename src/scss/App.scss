@@ -161,6 +161,7 @@
     height: 80px;
     margin: 0px;
     cursor: pointer;
+    z-index: 1;
 
     .box {
         // border: solid 1px #391D18;
@@ -170,12 +171,13 @@
         -webkit-transform-style: preserve-3d;
         -moz-transform-style: preserve-3d;
         background: #391D18;
+        z-index: 2;
     }
 
     .top {
         width: 80px;
         height: 80px;
-        z-index: 1;
+        z-index: 2;
     }
 
     .front {
@@ -190,6 +192,8 @@
         -webkit-transform: rotateX(-90deg) translate(-80px, 79px);
         -moz-transform: rotateX(-90deg) translate(-80px, 80px);
 
+        z-index: 2;
+
     }
 
     .right {
@@ -203,5 +207,7 @@
         transform: rotateY(90deg) translate(80px, -81px);
         -webkit-transform: rotateY(90deg) translate(79px, -80px);
         -moz-transform: rotateY(90deg) translate(80px, -80px);
+
+        z-index: 2;
     }
 }
