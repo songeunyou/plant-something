@@ -146,12 +146,12 @@
 }
 
 .image-section {
-    width: 100vw;
-    height: 840px;
+    width: 1200px;
+    height: 1200px;
     position: fixed;
     display: flex;
     flex-wrap: wrap;
-    -webkit-transform: rotateX(55deg) rotateZ(45deg);
+    -webkit-transform: rotateX(55deg) rotateZ(45deg) translate(0px, 0px);
     -webkit-transform-style: preserve-3d;
 }
 

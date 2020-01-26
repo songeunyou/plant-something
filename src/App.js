@@ -23,6 +23,9 @@ class App extends Component {
     }
 
     render() {
+
+        var tileArray = new Array(225).fill(0, 0);
+
         return (
             <div className="App">
                 {/*{this.state.count >= 150 ?
@@ -31,8 +34,7 @@ class App extends Component {
                     ""}*/}
 
                 <div className="image-section">
-                    {ImageList.map(image => <ImageCard key={image.img} countUp={this.countUp.bind(this)}/>)}
-                    {ImageList.map(image => <ImageCard key={image.img} countUp={this.countUp.bind(this)}/>)}
+                    {tileArray.map(tile => <ImageCard countUp={this.countUp.bind(this)}/>)}
                 </div>
 
                 <div className="move-around">
