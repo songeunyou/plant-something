@@ -82,9 +82,10 @@
 
 
     .made-it {
-        font-family: amador, sans-serif;
-        font-weight: 400;
-        font-size: 46px;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 4px;
+        font-size: 16px;
         position: absolute;
         animation-name: youveMadeIt;
         animation-duration: 3.6s;
@@ -97,37 +98,38 @@
         0% {
             opacity: 0;
             transform: translateY(20px);
-            color: blue;
+            color: #82220a;
         }
         25% {
             opacity: 1;
             transform: translateY(0px);
             color: red;
+            color: white;
         }
         75% {
             opacity: 1;
             transform: translateY(0px);
             color: red;
+            color: white;
         }
         100% {
             opacity: 0;
             transform: translateY(-20px);
-            color: blue;
+            color: #82220a;
         }
     }
 
     .paragraph {
-        // font-family: amador, sans-serif;
         font-size: 28px;
         font-size: 16px;
         position: absolute;
-        animation-name: paragraph;
+        animation-name: youveMadeIt;
         animation-duration: 4s;
         animation-fill-mode: forwards;
         opacity: 0%;
         color: white;
-        // font-weight: bolder;
-        letter-spacing: 2px;
+        font-weight: bolder;
+        letter-spacing: 1px;
     }
 
     .p1 {
@@ -140,25 +142,6 @@
 
     .p3 {
         animation-delay: 13.5s;
-    }
-
-    @keyframes paragraph {
-        0% {
-            opacity: 0;
-            transform: translateY(20px);
-        }
-        25% {
-            opacity: 1;
-            transform: translateY(0px);
-        }
-        75% {
-            opacity: 1;
-            transform: translateY(0px);
-        }
-        100% {
-            opacity: 0;
-            transform: translateY(-20px);
-        }
     }
 }
 

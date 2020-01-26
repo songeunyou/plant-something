@@ -29,7 +29,7 @@ class App extends Component {
                     <PixelBox/>
                     :
                     ""}
-
+                    
                 <div className="image-section">
                     {ImageList.map(image => <ImageCard key={image.img} countUp={this.countUp.bind(this)}/>)}
                     {ImageList.map(image => <ImageCard key={image.img} countUp={this.countUp.bind(this)}/>)}
