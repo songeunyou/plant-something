@@ -9,14 +9,12 @@
 
     .plant {
         position: relative;
+        display: flex;
+        justify-content: center;
         z-index: 4;
     }
 
     .plant1 {
-        position: relative;
-        display: flex;
-        justify-content: center;
-
         .flower {
             position: absolute;
             display: flex;
@@ -73,10 +71,6 @@
     }
 
     .plant2 {
-        position: relative;
-        display: flex;
-        justify-content: center;
-
         .flower {
             position: absolute;
             display: flex;
@@ -116,49 +110,24 @@
     }
 
     .plant3 {
-        position: relative;
-        display: flex;
-        justify-content: center;
-
         .flower {
             position: absolute;
             display: flex;
             align-items: center;
             justify-content: center;
             background: #ff1c77;
-            width: 16px;
+            width: 28px;
             height: 40px;
-            border-radius: 100%;
+            border-radius: 16px 16px 4px 4px;
             z-index: 4;
+            overflow: hidden;
 
-            .petal {
-                position: absolute;
-                background: #ff1c77;
-                border-radius: 100%;
-            }
-
-            .petal1 {
-                width: 14px;
-                height: 38px;
-                transform: translate(9px, -5px) rotate(-35deg);
-            }
-
-            .petal2 {
-                width: 14px;
-                height: 38px;
-                transform: translate(-9px, -5px) rotate(35deg);
-            }
-
-            .petal3 {
-                width: 12px;
-                height: 30px;
-                transform: translate(15px, -13px) rotate(-65deg);
-            }
-
-            .petal4 {
-                width: 12px;
-                height: 30px;
-                transform: translate(-15px, -13px) rotate(65deg);
+            .notch {
+                width: 22px;
+                height: 22px;
+                border-radius: 2px;
+                background: black;
+                transform: translate(0px, 22px) rotate(45deg);
             }
         }
 
@@ -193,6 +162,59 @@
 
         .right-leaf {
             transform: translate(10px) rotate(30deg) skew(30deg);
+        }
+    }
+
+    .plant4 {
+        .stem {
+            position: absolute;
+            border-radius: 50% 50% 10px 10px;
+        }
+
+        .stem1 {
+            background: red;
+            width: 58px;
+            height: 100px;
+        }
+
+        .stem2 {
+            background: #9e0010;
+            width: 50px;
+            height: 100px;
+        }
+
+        .stem3 {
+            background: #75000c;
+            width: 30px;
+            height: 94px;
+        }
+
+        .stem4 {
+            background: black;
+            width: 10px;
+            height: 40px;
+        }
+
+        .flower {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 10px;
+            background: black;
+            z-index: 4;
+        }
+
+        .flower1 {
+            transform: translate(0px, 40px);
+        }
+
+        .flower2 {
+            transform: translate(0px, 51px) rotate(45deg);
+            border-radius: 2px;
+        }
+
+        .flower3 {
+            transform: translate(0px, 62px);
         }
     }
 }

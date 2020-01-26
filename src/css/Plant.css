@@ -9,12 +9,9 @@
 }
 .plant-container .plant {
   position: relative;
-  z-index: 4;
-}
-.plant-container .plant1 {
-  position: relative;
   display: flex;
   justify-content: center;
+  z-index: 4;
 }
 .plant-container .plant1 .flower {
   position: absolute;
@@ -63,11 +60,6 @@
 .plant-container .plant1 .leaf2 {
   transform: translate(12px, -36px) rotate(140deg);
 }
-.plant-container .plant2 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
 .plant-container .plant2 .flower {
   position: absolute;
   display: flex;
@@ -100,46 +92,24 @@
   bottom: -35px;
   border-radius: 100% 100% 40px 40px;
 }
-.plant-container .plant3 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
 .plant-container .plant3 .flower {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #ff1c77;
-  width: 16px;
+  width: 28px;
   height: 40px;
-  border-radius: 100%;
+  border-radius: 16px 16px 4px 4px;
   z-index: 4;
+  overflow: hidden;
 }
-.plant-container .plant3 .flower .petal {
-  position: absolute;
-  background: #ff1c77;
-  border-radius: 100%;
-}
-.plant-container .plant3 .flower .petal1 {
-  width: 14px;
-  height: 38px;
-  transform: translate(9px, -5px) rotate(-35deg);
-}
-.plant-container .plant3 .flower .petal2 {
-  width: 14px;
-  height: 38px;
-  transform: translate(-9px, -5px) rotate(35deg);
-}
-.plant-container .plant3 .flower .petal3 {
-  width: 12px;
-  height: 30px;
-  transform: translate(15px, -13px) rotate(-65deg);
-}
-.plant-container .plant3 .flower .petal4 {
-  width: 12px;
-  height: 30px;
-  transform: translate(-15px, -13px) rotate(65deg);
+.plant-container .plant3 .flower .notch {
+  width: 22px;
+  height: 22px;
+  border-radius: 2px;
+  background: black;
+  transform: translate(0px, 22px) rotate(45deg);
 }
 .plant-container .plant3 .stem {
   position: absolute;
@@ -168,6 +138,48 @@
 }
 .plant-container .plant3 .right-leaf {
   transform: translate(10px) rotate(30deg) skew(30deg);
+}
+.plant-container .plant4 .stem {
+  position: absolute;
+  border-radius: 50% 50% 10px 10px;
+}
+.plant-container .plant4 .stem1 {
+  background: red;
+  width: 58px;
+  height: 100px;
+}
+.plant-container .plant4 .stem2 {
+  background: #9e0010;
+  width: 50px;
+  height: 100px;
+}
+.plant-container .plant4 .stem3 {
+  background: #75000c;
+  width: 30px;
+  height: 94px;
+}
+.plant-container .plant4 .stem4 {
+  background: black;
+  width: 10px;
+  height: 40px;
+}
+.plant-container .plant4 .flower {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: black;
+  z-index: 4;
+}
+.plant-container .plant4 .flower1 {
+  transform: translate(0px, 40px);
+}
+.plant-container .plant4 .flower2 {
+  transform: translate(0px, 51px) rotate(45deg);
+  border-radius: 2px;
+}
+.plant-container .plant4 .flower3 {
+  transform: translate(0px, 62px);
 }
 
 /*# sourceMappingURL=Plant.css.map */

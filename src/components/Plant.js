@@ -50,11 +50,24 @@ class Plant3 extends Component {
                     <div className="stripe"/>
                 </div>
                 <div className="flower">
-                    <div className="petal petal1"/>
-                    <div className="petal petal2"/>
-                    <div className="petal petal3"/>
-                    <div className="petal petal4"/>
+                    <div className="notch"/>
                 </div>
+            </div>
+        );
+    }
+}
+
+class Plant4 extends Component {
+    render() {
+        return(
+            <div className="plant plant4">
+                <div className="flower flower1"/>
+                <div className="flower flower2"/>
+                <div className="flower flower3"/>
+                <div className="stem stem1"/>
+                <div className="stem stem2"/>
+                <div className="stem stem3"/>
+                <div className="stem stem4"/>
             </div>
         );
     }
@@ -78,7 +91,7 @@ class Plant extends Component {
 
     randomPlant() {
         const min=0;
-        const max=2;
+        const max=3;
         const random = Math.round(Math.random() * (+max - +min) + +min);
 
         if (random === 0) {
@@ -87,6 +100,8 @@ class Plant extends Component {
             return <Plant2/>
         } else if (random === 2) {
             return <Plant3/>
+        } else if (random === 3) {
+            return <Plant4/>
         }
     }
 
