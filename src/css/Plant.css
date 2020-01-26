@@ -35,14 +35,14 @@
 }
 .plant-container .plant1 .flower .petal2 {
   position: absolute;
-  background: blue;
+  background: #7A0600;
   width: 10px;
   height: 10px;
   border-radius: 30px;
 }
 .plant-container .plant1 .stem {
   position: absolute;
-  background: brown;
+  background: #75000c;
   width: 4px;
   height: 80px;
   bottom: -10px;
@@ -50,11 +50,16 @@
 }
 .plant-container .plant1 .leaf {
   position: absolute;
-  background: green;
+  background: #590009;
   width: 14px;
   height: 32px;
-  border-radius: 30px;
+  border-radius: 50%;
+}
+.plant-container .plant1 .leaf1 {
   transform: translate(-12px, -50px) rotate(40deg);
+}
+.plant-container .plant1 .leaf2 {
+  transform: translate(12px, -36px) rotate(140deg);
 }
 .plant-container .plant2 {
   position: relative;
@@ -73,7 +78,7 @@
 }
 .plant-container .plant2 .flower .petal1 {
   position: absolute;
-  background: purple;
+  background: #f5bca2;
   width: 20px;
   height: 20px;
   border-radius: 30px;
@@ -87,7 +92,7 @@
 }
 .plant-container .plant2 .stem {
   position: absolute;
-  background: blue;
+  background: #2b170f;
   width: 40px;
   height: 110px;
   bottom: -35px;
