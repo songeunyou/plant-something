@@ -380,59 +380,182 @@
     }
 
     .plant3 {
-        .flower {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #ff1c77;
-            width: 28px;
-            height: 40px;
-            border-radius: 16px 16px 4px 4px;
-            z-index: 4;
-            overflow: hidden;
 
-            .notch {
-                width: 22px;
-                height: 22px;
-                border-radius: 2px;
-                background: black;
-                transform: translate(0px, 22px) rotate(45deg);
+        .stage-2 div, .stage-3 div, .stage-4 div  {
+            transition: 0.5s;
+            -webkit-transition: all 0.5s linear;
+            -moz-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+        }
+
+        .stage-1 {
+            .flower {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #ff1c77;
+                width: 0px;
+                height: 0px;
+                border-radius: 16px 16px 4px 4px;
+                bottom: 80px;
+                z-index: 4;
+                overflow: hidden;
+            }
+
+            .stem {
+                position: absolute;
+                bottom: 70px;
+                width: 10px;
+                height: 10px;
+                border-radius: 30px;
+                background: #30001b;
+                z-index: 4;
             }
         }
 
-        .stem {
-            position: absolute;
-            bottom: 0px;
-            width: 4px;
-            height: 80px;
-            background: #30001b;
-            z-index: 4;
+        .stage-2 {
+            .flower {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #ff1c77;
+                width: 10px;
+                height: 10px;
+                bottom: 40px;
+                border-radius: 40px;
+                z-index: 4;
+                overflow: hidden;
+            }
+
+            .stem {
+                position: absolute;
+                bottom: 50px;
+                width: 4px;
+                height: 30px;
+                background: #30001b;
+                z-index: 4;
+            }
+
+            .leaf {
+                position: absolute;
+                bottom: 30px;
+                background: #40001a;
+                width: 0px;
+                height: 0px;
+            }
+
+            .left-leaf {
+                transform: translate(-10px, -30px) rotate(-30deg) skew(-30deg);
+                border-radius: 60% 2px;
+            }
+
+            .right-leaf {
+                transform: translate(10px, -30px) rotate(30deg) skew(30deg);
+                border-radius: 2px 60%;
+            }
+        }
+        .stage-3 {
+            .flower {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #ff1c77;
+                width: 20px;
+                height: 28px;
+                bottom: 0px;
+                border-radius: 16px 16px 4px 4px;
+                z-index: 4;
+                overflow: hidden;
+
+                .notch {
+                    width: 0px;
+                    height: 0px;
+                    border-radius: 2px;
+                    background: black;
+                    transform: translate(0px, 22px) rotate(45deg);
+                }
+            }
+
+            .stem {
+                position: absolute;
+                bottom: 20px;
+                width: 4px;
+                height: 60px;
+                background: #30001b;
+                z-index: 4;
+            }
+
+            .leaf {
+                position: absolute;
+                bottom: 14px;
+                background: #40001a;
+                width: 14px;
+                height: 24px;
+            }
+
+            .left-leaf {
+                transform: translate(-8px, -37px) rotate(-30deg) skew(-30deg);
+                border-radius: 60% 2px;
+            }
+
+            .right-leaf {
+                transform: translate(8px, -37px) rotate(30deg) skew(30deg);
+                border-radius: 2px 60%;
+            }
         }
 
-        .leaf {
-            position: absolute;
-            bottom: 4px;
-            background: #40001a;
-            width: 24px;
-            height: 40px;
+        .stage-4 {
+            .flower {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #ff1c77;
+                width: 28px;
+                height: 40px;
+                bottom: -38px;
+                border-radius: 16px 16px 4px 4px;
+                z-index: 4;
+                overflow: hidden;
 
-            // .stripe {
-            //     width: 24px;
-            //     height: 3px;
-            //     background: brown;
-            //     margin: 5px 0px;
-            // }
-        }
+                .notch {
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 2px;
+                    background: black;
+                    transform: translate(0px, 22px) rotate(45deg);
+                }
+            }
 
-        .left-leaf {
-            transform: translate(-10px, -30px) rotate(-30deg) skew(-30deg);
-            border-radius: 60% 2px;
-        }
+            .stem {
+                position: absolute;
+                bottom: 0px;
+                width: 4px;
+                height: 80px;
+                background: #30001b;
+                z-index: 4;
+            }
 
-        .right-leaf {
-            transform: translate(10px, -30px) rotate(30deg) skew(30deg);
-            border-radius: 2px 60%;
+            .leaf {
+                position: absolute;
+                bottom: 4px;
+                background: #40001a;
+                width: 24px;
+                height: 40px;
+            }
+
+            .left-leaf {
+                transform: translate(-10px, -30px) rotate(-30deg) skew(-30deg);
+                border-radius: 60% 2px;
+            }
+
+            .right-leaf {
+                transform: translate(10px, -30px) rotate(30deg) skew(30deg);
+                border-radius: 2px 60%;
+            }
         }
     }
 
