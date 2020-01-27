@@ -109,9 +109,20 @@
 
         .leaf {
             position: absolute;
-            color: beige;
-            width: 40px;
-            height: 20px;
+            background: #140a06;
+            width: 36px;
+            height: 10px;
+            border-radius: 50% 70px;
+        }
+
+        .leaf1 {
+            transform: translate(-12px, -70px) rotate(-50deg);
+            border-radius: 50% 70px;
+        }
+
+        .leaf2 {
+            transform: translate(12px, -70px) rotate(50deg);
+            border-radius: 70px 50%;
         }
     }
 
@@ -148,26 +159,27 @@
 
         .leaf {
             position: absolute;
-            bottom: 10px;
+            bottom: 4px;
             background: #40001a;
             width: 24px;
-            height: 30px;
-            border-radius: 2px;
+            height: 40px;
 
-            .stripe {
-                width: 24px;
-                height: 3px;
-                background: brown;
-                margin: 5px 0px;
-            }
+            // .stripe {
+            //     width: 24px;
+            //     height: 3px;
+            //     background: brown;
+            //     margin: 5px 0px;
+            // }
         }
 
         .left-leaf {
-            transform: translate(-10px) rotate(-30deg) skew(-30deg);
+            transform: translate(-10px, -30px) rotate(-30deg) skew(-30deg);
+            border-radius: 60% 2px;
         }
 
         .right-leaf {
-            transform: translate(10px) rotate(30deg) skew(30deg);
+            transform: translate(10px, -30px) rotate(30deg) skew(30deg);
+            border-radius: 2px 60%;
         }
     }
 
