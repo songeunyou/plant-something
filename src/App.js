@@ -23,21 +23,38 @@ class App extends Component {
     }
 
     render() {
+
+        var tileArray = new Array(36).fill(0, 0);
+
         return (
             <div className="App">
-                {this.state.count >= 150 ?
-                    <PixelBox/>
+                {this.state.count >= 36 ?
+                    <div className="love-it-container">
+                        <div className="love-it-move-box">
+                            <div className="love-it">I LOVE IT</div>
+                            <div className="love-it">I LOVE IT</div>
+                        </div>
+                    </div>
                     :
                     ""}
-                    
+
+
                 <div className="image-section">
-                    {ImageList.map(image => <ImageCard key={image.img} countUp={this.countUp.bind(this)}/>)}
-                    {ImageList.map(image => <ImageCard key={image.img} countUp={this.countUp.bind(this)}/>)}
+                    {tileArray.map(tile => <ImageCard countUp={this.countUp.bind(this)}/>)}
                 </div>
 
                 <div className="move-around">
-                    FILL ME UP
+                    PLANT SOMETHING
                 </div>
+
+                {this.state.count >= 36 ?
+                    <div className="light-container">
+                        <div className="light"/>
+                        <div className="gradient-left"/>
+                        <div className="gradient-right"/>
+                    </div>
+                    :
+                    ""}
             </div>
         );
     }
