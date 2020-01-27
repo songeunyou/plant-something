@@ -38,7 +38,7 @@ class App extends Component {
                 </div>
 
                 <div className="move-around">
-                    FILL ME UP
+                    PLANT SOMETHING
                 </div>
             </div>
         );

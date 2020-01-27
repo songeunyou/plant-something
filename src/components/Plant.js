@@ -150,8 +150,7 @@ class Plant extends Component {
         const max=5;
         const random = Math.round(Math.random() * (+max - +min) + +min);
 
-        // this.setState({ plant: random, plantExist: true });
-        this.setState({ plant: 5, plantExist: true });
+        this.setState({ plant: random, plantExist: true });
     }
 
     plant() {
