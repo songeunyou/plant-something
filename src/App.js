@@ -28,10 +28,16 @@ class App extends Component {
 
         return (
             <div className="App">
-                {/*{this.state.count >= 150 ?
-                    <PixelBox/>
+                {this.state.count >= 36 ?
+                    <div className="love-it-container">
+                        <div className="love-it-move-box">
+                            <div className="love-it">I LOVE IT</div>
+                            <div className="love-it">I LOVE IT</div>
+                        </div>
+                    </div>
                     :
-                    ""}*/}
+                    ""}
+
 
                 <div className="image-section">
                     {tileArray.map(tile => <ImageCard countUp={this.countUp.bind(this)}/>)}
@@ -40,6 +46,15 @@ class App extends Component {
                 <div className="move-around">
                     PLANT SOMETHING
                 </div>
+
+                {this.state.count >= 36 ?
+                    <div className="light-container">
+                        <div className="light"/>
+                        <div className="gradient-left"/>
+                        <div className="gradient-right"/>
+                    </div>
+                    :
+                    ""}
             </div>
         );
     }

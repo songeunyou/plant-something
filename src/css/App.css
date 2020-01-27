@@ -7,6 +7,138 @@
   overflow: scroll;
 }
 
+.love-it-container {
+  position: fixed;
+  bottom: 120px;
+  width: 120px;
+  height: 36px;
+  overflow: hidden;
+}
+
+.love-it-move-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0%;
+  animation-name: loveIt;
+  animation-duration: 0.8s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes loveIt {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+    color: #82220a;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-32px);
+    color: white;
+  }
+}
+
+.love-it {
+  margin-bottom: 14px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 4px;
+  position: relative;
+  z-index: 10;
+}
+
+.light-container {
+  position: absolute;
+  pointer-events: none;
+  width: 676px;
+  height: 0vh;
+  transform: translateY(-16vh);
+  z-index: 1;
+  overflow: hidden;
+  animation-name: fadeInStretch;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInStretch {
+  0% {
+    opacity: 0;
+    height: 0vh;
+    transform: translateY(0vh);
+  }
+  100% {
+    opacity: 1;
+    height: 60vh;
+    transform: translateY(-30vh);
+  }
+}
+.light-container .gradient-left {
+  position: absolute;
+  width: 50%;
+  height: 140%;
+  top: -120px;
+  transform: skewY(-30deg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0), black, black);
+  z-index: 4;
+}
+.light-container .gradient-right {
+  position: absolute;
+  width: 50%;
+  height: 140%;
+  top: -120px;
+  right: 0px;
+  transform: skewY(30deg);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0), black, black);
+  z-index: 4;
+}
+.light-container .light {
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #16a7c7, #5f44ca, #ca4461);
+  background-size: 400% 400%;
+  z-index: 2;
+  -webkit-animation: lightAnimation 5s ease infinite;
+  -moz-animation: lightAnimation 5s ease infinite;
+  animation: lightAnimation 5s ease infinite;
+}
+@-webkit-keyframes lightAnimation {
+  0% {
+    background-position: 17% 0%;
+  }
+  50% {
+    background-position: 84% 100%;
+  }
+  100% {
+    background-position: 17% 0%;
+  }
+}
+@-moz-keyframes lightAnimation {
+  0% {
+    background-position: 17% 0%;
+  }
+  50% {
+    background-position: 84% 100%;
+  }
+  100% {
+    background-position: 17% 0%;
+  }
+}
+@keyframes lightAnimation {
+  0% {
+    background-position: 17% 0%;
+  }
+  50% {
+    background-position: 84% 100%;
+  }
+  100% {
+    background-position: 17% 0%;
+  }
+}
+
 .move-around {
   color: white;
   font-weight: bolder;
@@ -140,6 +272,7 @@
   flex-wrap: wrap;
   -webkit-transform: rotateX(55deg) rotateZ(45deg) translate(0px, 0px);
   -webkit-transform-style: preserve-3d;
+  z-index: 2;
 }
 
 .image-card {

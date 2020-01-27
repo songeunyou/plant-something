@@ -18,7 +18,9 @@ class ImageCard extends Component {
     }
 
     random() {
-        this.props.countUp();
+        if (this.state.stage === 4) {
+            this.props.countUp();
+        }
         if (this.state.color === "black") {
             this.randomColor();
         }
