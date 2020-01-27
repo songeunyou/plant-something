@@ -2,7 +2,7 @@
   position: absolute;
   overflow: auto;
   transform: none;
-  -webkit-transform: rotateX(140deg) rotateY(140deg) rotateZ(-33deg) translate3d(6px, 46px, 54px);
+  -webkit-transform: rotateX(140deg) rotateY(140deg) rotateZ(-33deg) translate3d(6px, 50px, 60px);
   pointer-events: none;
   overflow: visible;
 }
@@ -59,7 +59,101 @@
 .plant-container .plant1 .leaf2 {
   transform: translate(12px, -36px) rotate(140deg);
 }
-.plant-container .plant2 .flower {
+.plant-container .plant2 .stage-2 div, .plant-container .plant2 .stage-3 div, .plant-container .plant2 .stage-4 div {
+  transition: 0.5s;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+.plant-container .plant2 .stage-1 .flower {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+  width: 0px;
+  height: 0px;
+  bottom: 78px;
+  border-radius: 0px;
+}
+.plant-container .plant2 .stage-1 .stem {
+  position: absolute;
+  background: #2b170f;
+  width: 10px;
+  height: 10px;
+  bottom: 70px;
+  border-radius: 40px;
+}
+.plant-container .plant2 .stage-2 .flower {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+  width: 10px;
+  height: 10px;
+  bottom: 30px;
+  border-radius: 30px;
+}
+.plant-container .plant2 .stage-2 .stem {
+  position: absolute;
+  background: #2b170f;
+  width: 20px;
+  height: 54px;
+  bottom: 25px;
+  border-radius: 200% 200% 40px 40px;
+}
+.plant-container .plant2 .stage-3 .flower {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
+  bottom: -6px;
+}
+.plant-container .plant2 .stage-3 .flower .petal1 {
+  position: absolute;
+  background: #f5bca2;
+  width: 0px;
+  height: 0px;
+  border-radius: 30px;
+  bottom: -6px;
+}
+.plant-container .plant2 .stage-3 .flower .petal2 {
+  position: absolute;
+  background: black;
+  width: 0px;
+  height: 0px;
+  border-radius: 30px;
+  bottom: -6px;
+}
+.plant-container .plant2 .stage-3 .stem {
+  position: absolute;
+  background: #2b170f;
+  width: 36px;
+  height: 90px;
+  bottom: -14px;
+  border-radius: 160% 160% 60px 60px;
+}
+.plant-container .plant2 .stage-3 .leaf {
+  position: absolute;
+  background: #140a06;
+  width: 0px;
+  height: 0px;
+  border-radius: 50% 70px;
+}
+.plant-container .plant2 .stage-3 .leaf1 {
+  transform: translate(-12px, -70px) rotate(-50deg);
+  border-radius: 50% 70px;
+}
+.plant-container .plant2 .stage-3 .leaf2 {
+  transform: translate(12px, -70px) rotate(50deg);
+  border-radius: 70px 50%;
+}
+.plant-container .plant2 .stage-4 .flower {
   position: absolute;
   display: flex;
   align-items: center;
@@ -68,22 +162,25 @@
   width: 30px;
   height: 30px;
   border-radius: 30px;
+  bottom: -30px;
 }
-.plant-container .plant2 .flower .petal1 {
+.plant-container .plant2 .stage-4 .flower .petal1 {
   position: absolute;
   background: #f5bca2;
   width: 20px;
   height: 20px;
   border-radius: 30px;
+  bottom: auto;
 }
-.plant-container .plant2 .flower .petal2 {
+.plant-container .plant2 .stage-4 .flower .petal2 {
   position: absolute;
   background: black;
   width: 10px;
   height: 10px;
   border-radius: 30px;
+  bottom: auto;
 }
-.plant-container .plant2 .stem {
+.plant-container .plant2 .stage-4 .stem {
   position: absolute;
   background: #2b170f;
   width: 40px;
@@ -91,18 +188,18 @@
   bottom: -35px;
   border-radius: 100% 100% 40px 40px;
 }
-.plant-container .plant2 .leaf {
+.plant-container .plant2 .stage-4 .leaf {
   position: absolute;
   background: #140a06;
   width: 36px;
   height: 10px;
   border-radius: 50% 70px;
 }
-.plant-container .plant2 .leaf1 {
+.plant-container .plant2 .stage-4 .leaf1 {
   transform: translate(-12px, -70px) rotate(-50deg);
   border-radius: 50% 70px;
 }
-.plant-container .plant2 .leaf2 {
+.plant-container .plant2 .stage-4 .leaf2 {
   transform: translate(12px, -70px) rotate(50deg);
   border-radius: 70px 50%;
 }
@@ -188,22 +285,22 @@
 .plant-container .plant4 .stage-2 .stem1 {
   background: red;
   width: 40px;
-  height: 56px;
+  height: 48px;
 }
 .plant-container .plant4 .stage-2 .stem2 {
   background: #9e0010;
   width: 36px;
-  height: 56px;
+  height: 48px;
 }
 .plant-container .plant4 .stage-2 .stem3 {
   background: #75000c;
   width: 24px;
-  height: 40px;
+  height: 34px;
 }
 .plant-container .plant4 .stage-2 .stem4 {
   background: black;
   width: 10px;
-  height: 20px;
+  height: 18px;
 }
 .plant-container .plant4 .stage-2 .flower {
   position: absolute;
@@ -219,23 +316,23 @@
 }
 .plant-container .plant4 .stage-3 .stem1 {
   background: red;
-  width: 50px;
-  height: 82px;
+  width: 48px;
+  height: 72px;
 }
 .plant-container .plant4 .stage-3 .stem2 {
   background: #9e0010;
-  width: 44px;
-  height: 82px;
+  width: 42px;
+  height: 72px;
 }
 .plant-container .plant4 .stage-3 .stem3 {
   background: #75000c;
-  width: 30px;
-  height: 68px;
+  width: 26px;
+  height: 60px;
 }
 .plant-container .plant4 .stage-3 .stem4 {
   background: black;
   width: 10px;
-  height: 34px;
+  height: 32px;
 }
 .plant-container .plant4 .stage-3 .flower {
   position: absolute;
