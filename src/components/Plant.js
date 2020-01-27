@@ -114,13 +114,15 @@ class Plant5 extends Component {
 class Plant6 extends Component {
     render() {
         return(
-            <div className="plant plant6">
-                <div className="flower"/>
-                <div className="leaf leaf1"/>
-                <div className="leaf leaf2"/>
-                <div className="leaf leaf3">
-                    <div className="inner-leaf leaf1"/>
-                    <div className="inner-leaf leaf2"/>
+            <div className="plant6">
+                <div className={`plant stage-${this.props.level}`}>
+                    <div className="flower"/>
+                    <div className="leaf leaf1"/>
+                    <div className="leaf leaf2"/>
+                    <div className="leaf leaf3">
+                        <div className="inner-leaf leaf1"/>
+                        <div className="inner-leaf leaf2"/>
+                    </div>
                 </div>
             </div>
         );
@@ -149,7 +151,7 @@ class Plant extends Component {
         const random = Math.round(Math.random() * (+max - +min) + +min);
 
         // this.setState({ plant: random, plantExist: true });
-        this.setState({ plant: 2, plantExist: true });
+        this.setState({ plant: 5, plantExist: true });
     }
 
     plant() {

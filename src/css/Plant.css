@@ -841,7 +841,109 @@
   transform: translate(10px, -30px) rotate(30deg) skew(30deg);
   border-radius: 2px 60%;
 }
-.plant-container .plant6 .flower {
+.plant-container .plant6 .stage-2 div, .plant-container .plant6 .stage-3 div, .plant-container .plant6 .stage-4 div {
+  transition: 0.5s;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+.plant-container .plant6 .stage-1 .leaf {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 30px;
+  background: black;
+}
+.plant-container .plant6 .stage-1 .leaf1 {
+  transform: translate(0px, -85px) rotate(-20deg);
+}
+.plant-container .plant6 .stage-1 .leaf2 {
+  transform: translate(0px, -85px) rotate(20deg);
+}
+.plant-container .plant6 .stage-1 .leaf3 {
+  width: 0px;
+  height: 0px;
+  background: #7a0b0b;
+  transform: translate(0px, -85px);
+  z-index: -1;
+}
+.plant-container .plant6 .stage-2 .flower {
+  position: absolute;
+  background: #f79d8d;
+  width: 4px;
+  height: 0px;
+  border-radius: 200%;
+  transform: translate(0px, -60px);
+}
+.plant-container .plant6 .stage-2 .leaf {
+  position: absolute;
+  width: 14px;
+  height: 36px;
+  border-radius: 80% 80% 6px 6px;
+  background: black;
+}
+.plant-container .plant6 .stage-2 .leaf1 {
+  transform: translate(4px, -85px) rotate(-10deg);
+}
+.plant-container .plant6 .stage-2 .leaf2 {
+  transform: translate(-4px, -85px) rotate(10deg);
+}
+.plant-container .plant6 .stage-2 .leaf3 {
+  width: 20px;
+  height: 30px;
+  background: #7a0b0b;
+  transform: translate(0px, -80px);
+  z-index: -1;
+}
+.plant-container .plant6 .stage-2 .leaf3 .inner-leaf {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  background: #ab5e2c;
+  border-radius: 40px;
+}
+.plant-container .plant6 .stage-3 .flower {
+  position: absolute;
+  background: #f79d8d;
+  width: 6px;
+  height: 54px;
+  border-radius: 200%;
+  transform: translate(0px, -60px);
+}
+.plant-container .plant6 .stage-3 .leaf {
+  position: absolute;
+  width: 18px;
+  height: 60px;
+  border-radius: 80% 80% 6px 6px;
+  background: black;
+}
+.plant-container .plant6 .stage-3 .leaf1 {
+  transform: translate(8px, -85px) rotate(-16deg);
+}
+.plant-container .plant6 .stage-3 .leaf2 {
+  transform: translate(-8px, -85px) rotate(16deg);
+}
+.plant-container .plant6 .stage-3 .leaf3 {
+  width: 24px;
+  height: 60px;
+  background: #7a0b0b;
+  transform: translate(0px, -80px);
+  z-index: -1;
+}
+.plant-container .plant6 .stage-3 .leaf3 .inner-leaf {
+  position: absolute;
+  width: 2px;
+  height: 30px;
+  background: #ab5e2c;
+  border-radius: 40px;
+}
+.plant-container .plant6 .stage-3 .leaf3 .leaf1 {
+  transform: translate(6px, 10px) rotate(10deg);
+}
+.plant-container .plant6 .stage-3 .leaf3 .leaf2 {
+  transform: translate(14px, 10px) rotate(-10deg);
+}
+.plant-container .plant6 .stage-4 .flower {
   position: absolute;
   background: #f79d8d;
   width: 8px;
@@ -849,37 +951,37 @@
   border-radius: 200%;
   transform: translate(0px, -60px);
 }
-.plant-container .plant6 .leaf {
+.plant-container .plant6 .stage-4 .leaf {
   position: absolute;
   width: 20px;
   height: 78px;
   border-radius: 80% 80% 6px 6px;
   background: black;
 }
-.plant-container .plant6 .leaf1 {
+.plant-container .plant6 .stage-4 .leaf1 {
   transform: translate(13px, -85px) rotate(-20deg);
 }
-.plant-container .plant6 .leaf2 {
+.plant-container .plant6 .stage-4 .leaf2 {
   transform: translate(-13px, -85px) rotate(20deg);
 }
-.plant-container .plant6 .leaf3 {
+.plant-container .plant6 .stage-4 .leaf3 {
   width: 30px;
   height: 80px;
   background: #7a0b0b;
   transform: translate(0px, -80px);
   z-index: -1;
 }
-.plant-container .plant6 .leaf3 .inner-leaf {
+.plant-container .plant6 .stage-4 .leaf3 .inner-leaf {
   position: absolute;
   width: 10px;
   height: 60px;
   background: #ab5e2c;
   border-radius: 40px;
 }
-.plant-container .plant6 .leaf3 .leaf1 {
+.plant-container .plant6 .stage-4 .leaf3 .leaf1 {
   transform: translate(6px, 10px) rotate(10deg);
 }
-.plant-container .plant6 .leaf3 .leaf2 {
+.plant-container .plant6 .stage-4 .leaf3 .leaf2 {
   transform: translate(14px, 10px) rotate(-10deg);
 }
 
