@@ -236,4 +236,136 @@
             transform: translate(0px, 62px);
         }
     }
+
+    .plant5 {
+        .flower {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 4;
+
+            .petal {
+                position: absolute;
+                width: 24px;
+                height: 32px;
+                background: beige;
+            }
+
+            .inner-petal {
+                position: absolute;
+                width: 20px;
+                height: 30px;
+                background: red;
+            }
+
+            .petal1 {
+                transform: translate(-10px, 0px) rotate(-30deg) skew(-30deg);
+                border-radius: 50% 2px;
+            }
+
+            .petal2 {
+                transform: translate(10px, 0px) rotate(30deg) skew(30deg);
+                border-radius: 2px 50%;
+            }
+
+            .petal3 {
+                transform: translate(-7px, 7px) rotate(-40deg) skew(-30deg);
+                border-radius: 50% 2px;
+            }
+
+            .petal4 {
+                transform: translate(7px, 7px) rotate(40deg) skew(30deg);
+                border-radius: 2px 50%;
+            }
+
+            .petal5 {
+                position: absolute;
+                background: maroon;
+                border-radius: 2px;
+                width: 20px;
+                height: 20px;
+                transform: rotate(45deg) translate(13px, 13px) skew(10deg, 10deg);
+            }
+
+        }
+
+        .stem {
+            position: absolute;
+            bottom: 0px;
+            width: 4px;
+            height: 80px;
+            background: #30001b;
+            z-index: 4;
+        }
+
+        .leaf {
+            position: absolute;
+            bottom: 4px;
+            background: #40001a;
+            width: 24px;
+            height: 40px;
+        }
+
+        .left-leaf {
+            transform: translate(-10px, -30px) rotate(-30deg) skew(-30deg);
+            border-radius: 60% 2px;
+        }
+
+        .right-leaf {
+            transform: translate(10px, -30px) rotate(30deg) skew(30deg);
+            border-radius: 2px 60%;
+        }
+    }
+
+    .plant6 {
+        .flower {
+            position: absolute;
+            background: #f79d8d;
+            width: 8px;
+            height: 100px;
+            border-radius: 200%;
+            transform: translate(0px, -60px);
+        }
+
+        .leaf {
+            position: absolute;
+            width: 20px;
+            height: 78px;
+            border-radius: 80% 80% 6px 6px;
+            background: black;
+        }
+
+        .leaf1 {
+            transform: translate(13px, -85px) rotate(-20deg);
+        }
+
+        .leaf2 {
+            transform: translate(-13px, -85px) rotate(20deg);
+        }
+
+        .leaf3 {
+            width: 30px;
+            height: 80px;
+            background: #7a0b0b;
+            transform: translate(0px, -80px);
+            z-index: -1;
+
+            .inner-leaf {
+                position: absolute;
+                width: 10px;
+                height: 60px;
+                background: #ab5e2c;
+                border-radius: 40px;
+            }
+
+            .leaf1 {
+                transform: translate(6px, 10px) rotate(10deg);
+            }
+
+            .leaf2 {
+                transform: translate(14px, 10px) rotate(-10deg);
+            }
+        }
+    }
 }
