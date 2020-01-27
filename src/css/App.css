@@ -133,8 +133,8 @@
 }
 
 .image-section {
-  width: 640px;
-  height: 640px;
+  width: 480px;
+  height: 480px;
   position: fixed;
   display: flex;
   flex-wrap: wrap;
