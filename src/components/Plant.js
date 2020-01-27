@@ -6,13 +6,15 @@ import '../css/Plant.css';
 class Plant1 extends Component {
     render() {
         return(
-            <div className="plant plant1">
-                <div className="stem"/>
-                <div className="leaf leaf1"/>
-                <div className="leaf leaf2"/>
-                <div className="flower">
-                    <div className="petal1"/>
-                    <div className="petal2"/>
+            <div className="plant1">    
+                <div className={`plant stage-${this.props.level}`}>
+                    <div className="stem"/>
+                    <div className="leaf leaf1"/>
+                    <div className="leaf leaf2"/>
+                    <div className="flower">
+                        <div className="petal1"/>
+                        <div className="petal2"/>
+                    </div>
                 </div>
             </div>
         );
@@ -136,10 +138,6 @@ class Plant extends Component {
     componentDidMount() {
         this.randomPlant();
     }
-    //
-    // shouldComponentUpdate(nextProps, nextState) {
-    //     return false;
-    // }
 
     randomPlant() {
         const min=0;
@@ -147,7 +145,7 @@ class Plant extends Component {
         const random = Math.round(Math.random() * (+max - +min) + +min);
 
         // this.setState({ plant: random, plantExist: true });
-                this.setState({ plant: 1, plantExist: true });
+        this.setState({ plant: 0, plantExist: true });
     }
 
     plant() {
