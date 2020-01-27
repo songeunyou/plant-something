@@ -185,55 +185,189 @@
 
     .plant4 {
         transform: translateY(-80px);
-        .stem {
-            position: absolute;
-            border-radius: 50% 50% 10px 10px;
+
+        .stage-2 div, .stage-3 div, .stage-4 div  {
+            transition: 0.5s;
+            -webkit-transition: all 0.5s linear;
+            -moz-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
         }
 
-        .stem1 {
-            background: red;
-            width: 58px;
-            height: 100px;
+        .stage-1 {
+            .stem {
+                position: absolute;
+                border-radius: 10px;
+            }
+
+            .stem1 {
+                background: red;
+                width: 10px;
+                height: 10px;
+            }
+
+            .stem2 {
+                background: #9e0010;
+                width: 10px;
+                height: 10px;
+            }
+
+            .stem3 {
+                background: #75000c;
+                width: 10px;
+                height: 10px;
+            }
+
+            .stem4 {
+                background: black;
+                width: 10px;
+                height: 10px;
+            }
         }
 
-        .stem2 {
-            background: #9e0010;
-            width: 50px;
-            height: 100px;
+        .stage-2 {
+            .stem {
+                position: absolute;
+                border-radius: 50% 50% 10px 10px;
+            }
+
+            .stem1 {
+                background: red;
+                width: 40px;
+                height: 56px;
+            }
+
+            .stem2 {
+                background: #9e0010;
+                width: 36px;
+                height: 56px;
+            }
+
+            .stem3 {
+                background: #75000c;
+                width: 24px;
+                height: 40px;
+            }
+
+            .stem4 {
+                background: black;
+                width: 10px;
+                height: 20px;
+            }
+
+            .flower {
+                position: absolute;
+                width: 0px;
+                height: 0px;
+                border-radius: 10px;
+                background: black;
+                z-index: 4;
+            }
         }
 
-        .stem3 {
-            background: #75000c;
-            width: 30px;
-            height: 94px;
+        .stage-3 {
+            .stem {
+                position: absolute;
+                border-radius: 50% 50% 10px 10px;
+            }
+
+            .stem1 {
+                background: red;
+                width: 50px;
+                height: 82px;
+            }
+
+            .stem2 {
+                background: #9e0010;
+                width: 44px;
+                height: 82px;
+            }
+
+            .stem3 {
+                background: #75000c;
+                width: 30px;
+                height: 68px;
+            }
+
+            .stem4 {
+                background: black;
+                width: 10px;
+                height: 34px;
+            }
+
+            .flower {
+                position: absolute;
+                width: 0px;
+                height: 0px;
+                border-radius: 10px;
+                background: black;
+                z-index: 4;
+            }
+
+            .flower1 {
+                transform: translate(0px, 40px);
+            }
+
+            .flower2 {
+                transform: translate(0px, 51px) rotate(45deg);
+                border-radius: 2px;
+            }
+
+            .flower3 {
+                transform: translate(0px, 62px);
+            }
         }
 
-        .stem4 {
-            background: black;
-            width: 10px;
-            height: 40px;
-        }
+        .stage-4 {
+            .stem {
+                position: absolute;
+                border-radius: 50% 50% 10px 10px;
+            }
 
-        .flower {
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            border-radius: 10px;
-            background: black;
-            z-index: 4;
-        }
+            .stem1 {
+                background: red;
+                width: 58px;
+                height: 100px;
+            }
 
-        .flower1 {
-            transform: translate(0px, 40px);
-        }
+            .stem2 {
+                background: #9e0010;
+                width: 50px;
+                height: 100px;
+            }
 
-        .flower2 {
-            transform: translate(0px, 51px) rotate(45deg);
-            border-radius: 2px;
-        }
+            .stem3 {
+                background: #75000c;
+                width: 30px;
+                height: 94px;
+            }
 
-        .flower3 {
-            transform: translate(0px, 62px);
+            .stem4 {
+                background: black;
+                width: 10px;
+                height: 40px;
+            }
+
+            .flower {
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border-radius: 10px;
+                background: black;
+                z-index: 4;
+            }
+
+            .flower1 {
+                transform: translate(0px, 40px);
+            }
+
+            .flower2 {
+                transform: translate(0px, 51px) rotate(45deg);
+                border-radius: 2px;
+            }
+
+            .flower3 {
+                transform: translate(0px, 62px);
+            }
         }
     }
 

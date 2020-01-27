@@ -61,14 +61,16 @@ class Plant3 extends Component {
 class Plant4 extends Component {
     render() {
         return(
-            <div className="plant plant4">
-                <div className="flower flower1"/>
-                <div className="flower flower2"/>
-                <div className="flower flower3"/>
-                <div className="stem stem1"/>
-                <div className="stem stem2"/>
-                <div className="stem stem3"/>
-                <div className="stem stem4"/>
+            <div className="plant4">
+                <div className={`plant stage-${this.props.level}`}>
+                    <div className="flower flower1"/>
+                    <div className="flower flower2"/>
+                    <div className="flower flower3"/>
+                    <div className="stem stem1"/>
+                    <div className="stem stem2"/>
+                    <div className="stem stem3"/>
+                    <div className="stem stem4"/>
+                </div>
             </div>
         );
     }
@@ -122,33 +124,60 @@ class Plant extends Component {
         super(props);
 
         this.state = {
-
+            plant: 0,
+            plantExist: false
         }
 
         this.randomPlant = this.randomPlant.bind(this);
     }
 
-
-        shouldComponentUpdate(nextProps, nextState) {
-            return false;
-        }
+    componentDidMount() {
+        this.randomPlant();
+    }
+    //
+    // shouldComponentUpdate(nextProps, nextState) {
+    //     return false;
+    // }
 
     randomPlant() {
         const min=0;
         const max=5;
         const random = Math.round(Math.random() * (+max - +min) + +min);
 
-        if (random === 0) {
+        // this.setState({ plant: random, plantExist: true });
+                this.setState({ plant: 3, plantExist: true });
+    }
+
+    plant() {
+        let {plant} = this.state;
+        let {stage} = this.props;
+
+        var level = 0;
+        if (stage === 2) {
+            // seed
+            level = 1;
+        } else if (stage === 3) {
+            // bud
+            level = 2;
+        } else if (stage === 4) {
+            // medium
+            level = 3;
+        } else if (stage >= 5) {
+            // full grown
+            level = 4;
+        }
+
+        if (plant === 0) {
             return <Plant1/>
-        } else if (random === 1) {
+        } else if (plant === 1) {
             return <Plant2/>
-        } else if (random === 2) {
+        } else if (plant === 2) {
             return <Plant3/>
-        } else if (random === 3) {
-            return <Plant4/>
-        } else if (random === 4) {
+        } else if (plant === 3) {
+            return <Plant4 level={level}/>
+        } else if (plant === 4) {
             return <Plant5/>
-        } else if (random === 5) {
+        } else if (plant === 5) {
             return <Plant6/>
         }
     }
@@ -156,7 +185,7 @@ class Plant extends Component {
     render() {
         return(
             <div className="plant-container">
-                {this.randomPlant()}
+                {this.state.plantExist ? this.plant() : ""}
             </div>
         );
     }

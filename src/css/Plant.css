@@ -151,31 +151,135 @@
 .plant-container .plant4 {
   transform: translateY(-80px);
 }
-.plant-container .plant4 .stem {
+.plant-container .plant4 .stage-2 div, .plant-container .plant4 .stage-3 div, .plant-container .plant4 .stage-4 div {
+  transition: 0.5s;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+}
+.plant-container .plant4 .stage-1 .stem {
+  position: absolute;
+  border-radius: 10px;
+}
+.plant-container .plant4 .stage-1 .stem1 {
+  background: red;
+  width: 10px;
+  height: 10px;
+}
+.plant-container .plant4 .stage-1 .stem2 {
+  background: #9e0010;
+  width: 10px;
+  height: 10px;
+}
+.plant-container .plant4 .stage-1 .stem3 {
+  background: #75000c;
+  width: 10px;
+  height: 10px;
+}
+.plant-container .plant4 .stage-1 .stem4 {
+  background: black;
+  width: 10px;
+  height: 10px;
+}
+.plant-container .plant4 .stage-2 .stem {
   position: absolute;
   border-radius: 50% 50% 10px 10px;
 }
-.plant-container .plant4 .stem1 {
+.plant-container .plant4 .stage-2 .stem1 {
+  background: red;
+  width: 40px;
+  height: 56px;
+}
+.plant-container .plant4 .stage-2 .stem2 {
+  background: #9e0010;
+  width: 36px;
+  height: 56px;
+}
+.plant-container .plant4 .stage-2 .stem3 {
+  background: #75000c;
+  width: 24px;
+  height: 40px;
+}
+.plant-container .plant4 .stage-2 .stem4 {
+  background: black;
+  width: 10px;
+  height: 20px;
+}
+.plant-container .plant4 .stage-2 .flower {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-radius: 10px;
+  background: black;
+  z-index: 4;
+}
+.plant-container .plant4 .stage-3 .stem {
+  position: absolute;
+  border-radius: 50% 50% 10px 10px;
+}
+.plant-container .plant4 .stage-3 .stem1 {
+  background: red;
+  width: 50px;
+  height: 82px;
+}
+.plant-container .plant4 .stage-3 .stem2 {
+  background: #9e0010;
+  width: 44px;
+  height: 82px;
+}
+.plant-container .plant4 .stage-3 .stem3 {
+  background: #75000c;
+  width: 30px;
+  height: 68px;
+}
+.plant-container .plant4 .stage-3 .stem4 {
+  background: black;
+  width: 10px;
+  height: 34px;
+}
+.plant-container .plant4 .stage-3 .flower {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-radius: 10px;
+  background: black;
+  z-index: 4;
+}
+.plant-container .plant4 .stage-3 .flower1 {
+  transform: translate(0px, 40px);
+}
+.plant-container .plant4 .stage-3 .flower2 {
+  transform: translate(0px, 51px) rotate(45deg);
+  border-radius: 2px;
+}
+.plant-container .plant4 .stage-3 .flower3 {
+  transform: translate(0px, 62px);
+}
+.plant-container .plant4 .stage-4 .stem {
+  position: absolute;
+  border-radius: 50% 50% 10px 10px;
+}
+.plant-container .plant4 .stage-4 .stem1 {
   background: red;
   width: 58px;
   height: 100px;
 }
-.plant-container .plant4 .stem2 {
+.plant-container .plant4 .stage-4 .stem2 {
   background: #9e0010;
   width: 50px;
   height: 100px;
 }
-.plant-container .plant4 .stem3 {
+.plant-container .plant4 .stage-4 .stem3 {
   background: #75000c;
   width: 30px;
   height: 94px;
 }
-.plant-container .plant4 .stem4 {
+.plant-container .plant4 .stage-4 .stem4 {
   background: black;
   width: 10px;
   height: 40px;
 }
-.plant-container .plant4 .flower {
+.plant-container .plant4 .stage-4 .flower {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -183,14 +287,14 @@
   background: black;
   z-index: 4;
 }
-.plant-container .plant4 .flower1 {
+.plant-container .plant4 .stage-4 .flower1 {
   transform: translate(0px, 40px);
 }
-.plant-container .plant4 .flower2 {
+.plant-container .plant4 .stage-4 .flower2 {
   transform: translate(0px, 51px) rotate(45deg);
   border-radius: 2px;
 }
-.plant-container .plant4 .flower3 {
+.plant-container .plant4 .stage-4 .flower3 {
   transform: translate(0px, 62px);
 }
 .plant-container .plant5 .flower {

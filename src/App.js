@@ -24,7 +24,7 @@ class App extends Component {
 
     render() {
 
-        var tileArray = new Array(100).fill(0, 0);
+        var tileArray = new Array(64).fill(0, 0);
 
         return (
             <div className="App">
