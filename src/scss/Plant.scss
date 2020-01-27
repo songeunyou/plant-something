@@ -625,83 +625,285 @@
     }
 
     .plant5 {
-        .flower {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 4;
 
-            .petal {
+        .stage-2 div, .stage-3 div, .stage-4 div  {
+            transition: 0.5s;
+            -webkit-transition: all 0.5s linear;
+            -moz-transition: all 0.5s linear;
+            -o-transition: all 0.5s linear;
+        }
+
+        .stage-1 {
+            .flower {
                 position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                bottom: 80px;
+                z-index: 4;
+
+                .petal {
+                    position: absolute;
+                    width: 0px;
+                    height: 0px;
+                    background: beige;
+                }
+
+                .petal1 {
+                    transform: translate(-10px, 0px) rotate(-30deg) skew(-30deg);
+                    border-radius: 50% 2px;
+                }
+
+                .petal2 {
+                    transform: translate(10px, 0px) rotate(30deg) skew(30deg);
+                    border-radius: 2px 50%;
+                }
+            }
+
+            .stem {
+                position: absolute;
+                bottom: 70px;
+                width: 10px;
+                height: 10px;
+                border-radius: 30px;
+                background: #30001b;
+                z-index: 4;
+            }
+        }
+
+        .stage-2 {
+            .flower {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                bottom: 40px;
+                z-index: 4;
+
+                .petal {
+                    position: absolute;
+                    width: 14px;
+                    height: 14px;
+                    background: beige;
+                }
+
+                .inner-petal {
+                    position: absolute;
+                    width: 0px;
+                    height: 0px;
+                    background: red;
+                }
+
+                .petal1 {
+                    transform: translate(-2px, 0px) rotate(-50deg) skew(-30deg);
+                    border-radius: 50% 2px;
+                }
+
+                .petal2 {
+                    transform: translate(2px, 0px) rotate(50deg) skew(30deg);
+                    border-radius: 2px 50%;
+                }
+
+                .petal3 {
+                    transform: translate(-7px, 7px) rotate(-40deg) skew(-30deg);
+                    border-radius: 50% 2px;
+                }
+
+                .petal4 {
+                    transform: translate(7px, 7px) rotate(40deg) skew(30deg);
+                    border-radius: 2px 50%;
+                }
+            }
+
+            .stem {
+                position: absolute;
+                bottom: 40px;
+                width: 4px;
+                height: 40px;
+                background: #30001b;
+                z-index: 4;
+            }
+
+            .leaf {
+                position: absolute;
+                bottom: 4px;
+                background: #40001a;
+                width: 0px;
+                height: 0px;
+            }
+
+            .left-leaf {
+                transform: translate(-10px, -50px) rotate(-30deg) skew(-30deg);
+                border-radius: 60% 2px;
+            }
+
+            .right-leaf {
+                transform: translate(10px, -50px) rotate(30deg) skew(30deg);
+                border-radius: 2px 60%;
+            }
+        }
+
+        .stage-3 {
+            .flower {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                bottom: 0px;
+                z-index: 4;
+
+                .petal {
+                    position: absolute;
+                    width: 20px;
+                    height: 24px;
+                    background: beige;
+                }
+
+                .inner-petal {
+                    position: absolute;
+                    width: 10px;
+                    height: 20px;
+                    background: red;
+                }
+
+                .petal1 {
+                    transform: translate(-5px, -9px) rotate(-40deg) skew(-30deg);
+                    border-radius: 50% 2px;
+                }
+
+                .petal2 {
+                    transform: translate(5px, -9px) rotate(40deg) skew(30deg);
+                    border-radius: 2px 50%;
+                }
+
+                .petal3 {
+                    transform: translate(-4px, -4px) rotate(-50deg) skew(-30deg);
+                    border-radius: 50% 2px;
+                }
+
+                .petal4 {
+                    transform: translate(4px, -4px) rotate(50deg) skew(30deg);
+                    border-radius: 2px 50%;
+                }
+
+                .petal5 {
+                    position: absolute;
+                    background: maroon;
+                    border-radius: 2px;
+                    width: 0px;
+                    height: 0px;
+                    transform: rotate(45deg) translate(0px, 0px) skew(10deg, 10deg);
+                }
+
+            }
+
+            .stem {
+                position: absolute;
+                bottom: 20px;
+                width: 4px;
+                height: 60px;
+                background: #30001b;
+                z-index: 4;
+            }
+
+            .leaf {
+                position: absolute;
+                bottom: 4px;
+                background: #40001a;
+                width: 18px;
+                height: 26px;
+            }
+
+            .left-leaf {
+                transform: translate(-9px, -44px) rotate(-30deg) skew(-30deg);
+                border-radius: 60% 2px;
+            }
+
+            .right-leaf {
+                transform: translate(9px, -44px) rotate(30deg) skew(30deg);
+                border-radius: 2px 60%;
+            }
+        }
+
+        .stage-4 {
+            .flower {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 4;
+
+                .petal {
+                    position: absolute;
+                    width: 24px;
+                    height: 32px;
+                    background: beige;
+                }
+
+                .inner-petal {
+                    position: absolute;
+                    width: 20px;
+                    height: 30px;
+                    background: red;
+                }
+
+                .petal1 {
+                    transform: translate(-10px, 0px) rotate(-30deg) skew(-30deg);
+                    border-radius: 50% 2px;
+                }
+
+                .petal2 {
+                    transform: translate(10px, 0px) rotate(30deg) skew(30deg);
+                    border-radius: 2px 50%;
+                }
+
+                .petal3 {
+                    transform: translate(-7px, 7px) rotate(-40deg) skew(-30deg);
+                    border-radius: 50% 2px;
+                }
+
+                .petal4 {
+                    transform: translate(7px, 7px) rotate(40deg) skew(30deg);
+                    border-radius: 2px 50%;
+                }
+
+                .petal5 {
+                    position: absolute;
+                    background: maroon;
+                    border-radius: 2px;
+                    width: 20px;
+                    height: 20px;
+                    transform: rotate(45deg) translate(13px, 13px) skew(10deg, 10deg);
+                }
+
+            }
+
+            .stem {
+                position: absolute;
+                bottom: 0px;
+                width: 4px;
+                height: 80px;
+                background: #30001b;
+                z-index: 4;
+            }
+
+            .leaf {
+                position: absolute;
+                bottom: 4px;
+                background: #40001a;
                 width: 24px;
-                height: 32px;
-                background: beige;
+                height: 40px;
             }
 
-            .inner-petal {
-                position: absolute;
-                width: 20px;
-                height: 30px;
-                background: red;
+            .left-leaf {
+                transform: translate(-10px, -30px) rotate(-30deg) skew(-30deg);
+                border-radius: 60% 2px;
             }
 
-            .petal1 {
-                transform: translate(-10px, 0px) rotate(-30deg) skew(-30deg);
-                border-radius: 50% 2px;
+            .right-leaf {
+                transform: translate(10px, -30px) rotate(30deg) skew(30deg);
+                border-radius: 2px 60%;
             }
-
-            .petal2 {
-                transform: translate(10px, 0px) rotate(30deg) skew(30deg);
-                border-radius: 2px 50%;
-            }
-
-            .petal3 {
-                transform: translate(-7px, 7px) rotate(-40deg) skew(-30deg);
-                border-radius: 50% 2px;
-            }
-
-            .petal4 {
-                transform: translate(7px, 7px) rotate(40deg) skew(30deg);
-                border-radius: 2px 50%;
-            }
-
-            .petal5 {
-                position: absolute;
-                background: maroon;
-                border-radius: 2px;
-                width: 20px;
-                height: 20px;
-                transform: rotate(45deg) translate(13px, 13px) skew(10deg, 10deg);
-            }
-
-        }
-
-        .stem {
-            position: absolute;
-            bottom: 0px;
-            width: 4px;
-            height: 80px;
-            background: #30001b;
-            z-index: 4;
-        }
-
-        .leaf {
-            position: absolute;
-            bottom: 4px;
-            background: #40001a;
-            width: 24px;
-            height: 40px;
-        }
-
-        .left-leaf {
-            transform: translate(-10px, -30px) rotate(-30deg) skew(-30deg);
-            border-radius: 60% 2px;
-        }
-
-        .right-leaf {
-            transform: translate(10px, -30px) rotate(30deg) skew(30deg);
-            border-radius: 2px 60%;
         }
     }
 

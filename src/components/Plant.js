@@ -6,7 +6,7 @@ import '../css/Plant.css';
 class Plant1 extends Component {
     render() {
         return(
-            <div className="plant1">    
+            <div className="plant1">
                 <div className={`plant stage-${this.props.level}`}>
                     <div className="stem"/>
                     <div className="leaf leaf1"/>
@@ -83,24 +83,26 @@ class Plant4 extends Component {
 class Plant5 extends Component {
     render() {
         return(
-            <div className="plant plant5">
-                <div className="stem"/>
-                <div className="leaf left-leaf">
-                    <div className="stripe"/>
-                    <div className="stripe"/>
-                    <div className="stripe"/>
-                </div>
-                <div className="leaf right-leaf">
-                    <div className="stripe"/>
-                    <div className="stripe"/>
-                    <div className="stripe"/>
-                </div>
-                <div className="flower">
-                    <div className="petal5"/>
-                    <div className="inner-petal petal3"/>
-                    <div className="inner-petal petal4"/>
-                    <div className="petal petal1"/>
-                    <div className="petal petal2"/>
+            <div className="plant5">
+                <div className={`plant stage-${this.props.level}`}>
+                    <div className="stem"/>
+                    <div className="leaf left-leaf">
+                        <div className="stripe"/>
+                        <div className="stripe"/>
+                        <div className="stripe"/>
+                    </div>
+                    <div className="leaf right-leaf">
+                        <div className="stripe"/>
+                        <div className="stripe"/>
+                        <div className="stripe"/>
+                    </div>
+                    <div className="flower">
+                        <div className="petal5"/>
+                        <div className="inner-petal petal3"/>
+                        <div className="inner-petal petal4"/>
+                        <div className="petal petal1"/>
+                        <div className="petal petal2"/>
+                    </div>
                 </div>
             </div>
         );
@@ -145,7 +147,7 @@ class Plant extends Component {
         const random = Math.round(Math.random() * (+max - +min) + +min);
 
         // this.setState({ plant: random, plantExist: true });
-        this.setState({ plant: 0, plantExist: true });
+        this.setState({ plant: 4, plantExist: true });
     }
 
     plant() {
@@ -176,9 +178,9 @@ class Plant extends Component {
         } else if (plant === 3) {
             return <Plant4 level={level}/>
         } else if (plant === 4) {
-            return <Plant5/>
+            return <Plant5 level={level}/>
         } else if (plant === 5) {
-            return <Plant6/>
+            return <Plant6 level={level}/>
         }
     }
 
