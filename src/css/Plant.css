@@ -129,6 +129,7 @@
   background: pink;
   width: 60px;
   height: 60px;
+  bottom: -66px;
   border-radius: 30px;
   z-index: 2;
 }
