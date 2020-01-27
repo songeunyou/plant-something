@@ -156,28 +156,26 @@
 }
 
 .image-card {
-    display: inline-block;
     width: 80px;
     height: 80px;
     margin: 0px;
     cursor: pointer;
     z-index: 1;
+    overflow: visible;
 
     .box {
-        // border: solid 1px #391D18;
         position: absolute;
         border-radius: 3px;
         transform-style: preserve-3d;
         -webkit-transform-style: preserve-3d;
         -moz-transform-style: preserve-3d;
         background: #391D18;
-        z-index: 2;
+        z-index: 1;
     }
 
     .top {
         width: 80px;
         height: 80px;
-        z-index: 2;
     }
 
     .front {

@@ -24,7 +24,8 @@ class Plant2 extends Component {
         return(
             <div className="plant plant2">
                 <div className="stem"/>
-                <div className="leaf"/>
+                <div className="leaf leaf1"/>
+                <div className="leaf leaf2"/>
                 <div className="flower">
                     <div className="petal1"/>
                     <div className="petal2"/>
