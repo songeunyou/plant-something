@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 
-import ImageCard from './components/ImageCard.js';
-import ImageList from './components/ImageList.js';
-import PixelBox from './components/PixelBox.js';
+import PlantTile from './components/PlantTile.js';
 
 import './css/App.css';
 
@@ -40,7 +38,7 @@ class App extends Component {
 
 
                 <div className="image-section">
-                    {tileArray.map(tile => <ImageCard countUp={this.countUp.bind(this)}/>)}
+                    {tileArray.map(tile => <PlantTile countUp={this.countUp.bind(this)}/>)}
                 </div>
 
                 <div className="move-around">

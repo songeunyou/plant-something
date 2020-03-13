@@ -2,10 +2,9 @@ import React, { Component } from 'react';
 import Plant from './Plant.js';
 
 import heart from '../media/heart.png';
-import imageList from './ImageList.js';
 import colorList from './ColorList.js';
 
-class ImageCard extends Component {
+class PlantTile extends Component {
 
     constructor(props) {
         super(props);
@@ -44,24 +43,24 @@ class ImageCard extends Component {
     render() {
         let {color, stage} = this.state;
 
-        const imageCardStyle = {
+        const plantTileStyle = {
             opacity: stage === 0 ? 0 : 1
         }
 
-        const imageCardColor = {
+        const plantTileColor = {
             background: color
         }
 
         return (
             <div className="image-card"
-                style={imageCardStyle}
+                style={plantTileStyle}
                 onMouseEnter={() => this.random()}
                 onClick={() => this.random()}>
 
                 <div className="box front"/>
                 <div className="box right"/>
                 <div className="box top"
-                    style={imageCardColor}/>
+                    style={plantTileColor}/>
 
                 {stage === 0 || stage === 1 ? "" : <Plant stage={stage}/>}
             </div>
@@ -69,4 +68,4 @@ class ImageCard extends Component {
     }
 }
 
-export default ImageCard;
+export default PlantTile;
