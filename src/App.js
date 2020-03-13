@@ -36,13 +36,19 @@ class App extends Component {
                     :
                     ""}
 
+                <div className="hover-section"/>
 
                 <div className="image-section">
                     {tileArray.map(tile => <PlantTile countUp={this.countUp.bind(this)}/>)}
                 </div>
 
+
                 <div className="move-around">
                     PLANT SOMETHING
+                </div>
+
+                <div className="hover-around">
+                    hover around
                 </div>
 
                 {this.state.count >= 36 ?

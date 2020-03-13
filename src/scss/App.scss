@@ -137,19 +137,34 @@
 
     animation-name: fadeIn;
     animation-duration: 0.4s;
+}
 
-    @keyframes fadeIn {
-        0% {
-            opacity: 0;
-        }
-        20% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
+.hover-around {
+    position: absolute;
+    opacity: 0;
+    color: #8c3a26;
+    font-size: 14px;
+    transform: translateY(30px);
+
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
+
+
 
 .success {
     font-family: amador, sans-serif;
@@ -266,6 +281,25 @@
     .p3 {
         animation-delay: 13.5s;
     }
+}
+
+.hover-section {
+    width: 480px;
+    height: 480px;
+    position: fixed;
+    border: solid 1px #5c291c;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-transform: rotateX(55deg) rotateZ(45deg) translate(0px, 0px);
+    -webkit-transform-style: preserve-3d;
+
+    opacity: 0;
+
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .image-section {
