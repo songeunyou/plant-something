@@ -30,7 +30,7 @@ class PlantTile extends Component {
 
     randomColor() {
         const min=0;
-        const max=52;
+        const max=49;
         const random = Math.round(Math.random() * (+max - +min) + +min);
         var color = colorList[random].color;
 
