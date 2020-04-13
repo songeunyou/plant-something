@@ -15,6 +15,12 @@
 
     .plant1 {
 
+        $plant1flower: #f23b27;
+        $plant1petal1: #ffe2b3;
+        $plant1petal2: #ff7940;
+        $plant1stem: #00410f;
+        $plant1leaf: #1f933e;
+
         .stage-2 div, .stage-3 div, .stage-4 div  {
             transition: 0.5s;
             -webkit-transition: all 0.5s linear;
@@ -28,7 +34,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: pink;
+                background: $plant1flower;
                 width: 0px;
                 height: 0px;
                 bottom: 70px;
@@ -38,7 +44,7 @@
 
             .stem {
                 position: absolute;
-                background: #75000c;
+                background: $plant1stem;
                 width: 10px;
                 height: 10px;
                 bottom: 70px;
@@ -53,7 +59,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: pink;
+                background: $plant1flower;
                 width: 12px;
                 height: 12px;
                 bottom: 32px;
@@ -63,7 +69,7 @@
 
             .stem {
                 position: absolute;
-                background: #75000c;
+                background: $plant1stem;
                 width: 4px;
                 height: 40px;
                 bottom: 40px;
@@ -73,7 +79,7 @@
 
             .leaf {
                 position: absolute;
-                background: #450007;
+                background: $plant1leaf;
                 width: 0px;
                 height: 0px;
                 border-radius: 50%;
@@ -94,7 +100,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: pink;
+                background: $plant1flower;
                 width: 34px;
                 height: 34px;
                 bottom: -15px;
@@ -103,7 +109,7 @@
 
                 .petal1 {
                     position: absolute;
-                    background: red;
+                    background: $plant1petal1;
                     width: 0px;
                     height: 0px;
                     border-radius: 30px;
@@ -111,7 +117,7 @@
 
                 .petal2 {
                     position: absolute;
-                    background: #7A0600;
+                    background: $plant1petal2;
                     width: 0px;
                     height: 0px;
                     border-radius: 30px;
@@ -120,7 +126,7 @@
 
             .stem {
                 position: absolute;
-                background: #75000c;
+                background: $plant1stem;
                 width: 4px;
                 height: 64px;
                 bottom: 18px;
@@ -130,7 +136,7 @@
 
             .leaf {
                 position: absolute;
-                background: #450007;
+                background: $plant1leaf;
                 width: 12px;
                 height: 28px;
                 border-radius: 50%;
@@ -151,7 +157,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: pink;
+                background: $plant1flower;
                 width: 60px;
                 height: 60px;
                 bottom: -66px;
@@ -160,7 +166,7 @@
 
                 .petal1 {
                     position: absolute;
-                    background: red;
+                    background: $plant1petal1;
                     width: 20px;
                     height: 20px;
                     border-radius: 30px;
@@ -168,7 +174,7 @@
 
                 .petal2 {
                     position: absolute;
-                    background: #7A0600;
+                    background: $plant1petal2;
                     width: 10px;
                     height: 10px;
                     border-radius: 30px;
@@ -177,7 +183,7 @@
 
             .stem {
                 position: absolute;
-                background: #75000c;
+                background: $plant1stem;
                 width: 4px;
                 height: 90px;
                 bottom: -10px;
@@ -187,7 +193,7 @@
 
             .leaf {
                 position: absolute;
-                background: #450007;
+                background: $plant1leaf;
                 width: 14px;
                 height: 32px;
                 border-radius: 50%;
@@ -205,6 +211,12 @@
 
     .plant2 {
 
+        $plant2flower: #ebac00;
+        $plant2petal1: white;
+        $plant2petal2: black;
+        $plant2stem: #a85623;
+        $plant2leaf: black;
+
         .stage-2 div, .stage-3 div, .stage-4 div  {
             transition: 0.5s;
             -webkit-transition: all 0.5s linear;
@@ -218,7 +230,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: red;
+                background: $plant2flower;
                 width: 0px;
                 height: 0px;
                 bottom: 78px;
@@ -227,7 +239,7 @@
 
             .stem {
                 position: absolute;
-                background: #2b170f;
+                background: $plant2stem;
                 width: 10px;
                 height: 10px;
                 bottom: 70px;
@@ -241,7 +253,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: red;
+                background: $plant2flower;
                 width: 10px;
                 height: 10px;
                 bottom: 30px;
@@ -250,7 +262,7 @@
 
             .stem {
                 position: absolute;
-                background: #2b170f;
+                background: $plant2stem;
                 width: 20px;
                 height: 54px;
                 bottom: 25px;
@@ -264,7 +276,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: red;
+                background: $plant2flower;
                 width: 20px;
                 height: 20px;
                 border-radius: 30px;
@@ -272,7 +284,7 @@
 
                 .petal1 {
                     position: absolute;
-                    background: #f5bca2;
+                    background: $plant2petal1;
                     width: 0px;
                     height: 0px;
                     border-radius: 30px;
@@ -281,7 +293,7 @@
 
                 .petal2 {
                     position: absolute;
-                    background: black;
+                    background: $plant2petal2;
                     width: 0px;
                     height: 0px;
                     border-radius: 30px;
@@ -291,7 +303,7 @@
 
             .stem {
                 position: absolute;
-                background: #2b170f;
+                background: $plant2stem;
                 width: 36px;
                 height: 90px;
                 bottom: -14px;
@@ -301,7 +313,7 @@
 
             .leaf {
                 position: absolute;
-                background: #140a06;
+                background: $plant2leaf;
                 width: 0px;
                 height: 0px;
                 border-radius: 50% 70px;
@@ -324,7 +336,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: red;
+                background: $plant2flower;
                 width: 30px;
                 height: 30px;
                 border-radius: 30px;
@@ -332,7 +344,7 @@
 
                 .petal1 {
                     position: absolute;
-                    background: #f5bca2;
+                    background: $plant2petal1;
                     width: 20px;
                     height: 20px;
                     border-radius: 30px;
@@ -341,7 +353,7 @@
 
                 .petal2 {
                     position: absolute;
-                    background: black;
+                    background: $plant2petal2;
                     width: 10px;
                     height: 10px;
                     border-radius: 30px;
@@ -351,7 +363,7 @@
 
             .stem {
                 position: absolute;
-                background: #2b170f;
+                background: $plant2stem;
                 width: 40px;
                 height: 110px;
                 bottom: -35px;
@@ -361,7 +373,7 @@
 
             .leaf {
                 position: absolute;
-                background: #140a06;
+                background: $plant2leaf;
                 width: 36px;
                 height: 10px;
                 border-radius: 50% 70px;
@@ -381,6 +393,10 @@
 
     .plant3 {
 
+        $plant3flower: #ffb733;
+        $plant3stem: #00372b;
+        $plant3leaf: #1a640e;
+
         .stage-2 div, .stage-3 div, .stage-4 div  {
             transition: 0.5s;
             -webkit-transition: all 0.5s linear;
@@ -394,7 +410,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: #ff1c77;
+                background: $plant3flower;
                 width: 0px;
                 height: 0px;
                 border-radius: 16px 16px 4px 4px;
@@ -409,7 +425,7 @@
                 width: 10px;
                 height: 10px;
                 border-radius: 30px;
-                background: #30001b;
+                background: $plant3stem;
                 z-index: 4;
             }
         }
@@ -420,7 +436,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: #ff1c77;
+                background: $plant3flower;
                 width: 10px;
                 height: 10px;
                 bottom: 40px;
@@ -434,14 +450,14 @@
                 bottom: 50px;
                 width: 4px;
                 height: 30px;
-                background: #30001b;
+                background: $plant3stem;
                 z-index: 4;
             }
 
             .leaf {
                 position: absolute;
                 bottom: 30px;
-                background: #40001a;
+                background: $plant3leaf;
                 width: 0px;
                 height: 0px;
             }
@@ -462,7 +478,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: #ff1c77;
+                background: $plant3flower;
                 width: 20px;
                 height: 28px;
                 bottom: 0px;
@@ -484,14 +500,14 @@
                 bottom: 20px;
                 width: 4px;
                 height: 60px;
-                background: #30001b;
+                background: $plant3stem;
                 z-index: 4;
             }
 
             .leaf {
                 position: absolute;
                 bottom: 14px;
-                background: #40001a;
+                background: $plant3leaf;
                 width: 14px;
                 height: 24px;
             }
@@ -513,7 +529,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                background: #ff1c77;
+                background: $plant3flower;
                 width: 28px;
                 height: 40px;
                 bottom: -38px;
@@ -535,14 +551,14 @@
                 bottom: 0px;
                 width: 4px;
                 height: 80px;
-                background: #30001b;
+                background: $plant3stem;
                 z-index: 4;
             }
 
             .leaf {
                 position: absolute;
                 bottom: 4px;
-                background: #40001a;
+                background: $plant3leaf;
                 width: 24px;
                 height: 40px;
             }
@@ -562,6 +578,11 @@
     .plant4 {
         transform: translateY(-80px);
 
+        $plant4flower: black;
+        $plant4stem1: #015026;
+        $plant4stem2: #549e47;
+        $plant4stem3: #e0d479;
+
         .stage-2 div, .stage-3 div, .stage-4 div  {
             transition: 0.5s;
             -webkit-transition: all 0.5s linear;
@@ -576,19 +597,19 @@
             }
 
             .stem1 {
-                background: red;
+                background: $plant4stem1;
                 width: 10px;
                 height: 10px;
             }
 
             .stem2 {
-                background: #9e0010;
+                background: $plant4stem2;
                 width: 10px;
                 height: 10px;
             }
 
             .stem3 {
-                background: #75000c;
+                background: $plant4stem3;
                 width: 10px;
                 height: 10px;
             }
@@ -607,19 +628,19 @@
             }
 
             .stem1 {
-                background: red;
+                background: $plant4stem1;
                 width: 36px;
                 height: 40px;
             }
 
             .stem2 {
-                background: #9e0010;
+                background: $plant4stem2;
                 width: 32px;
                 height: 40px;
             }
 
             .stem3 {
-                background: #75000c;
+                background: $plant4stem3;
                 width: 22px;
                 height: 30px;
             }
@@ -635,7 +656,7 @@
                 width: 0px;
                 height: 0px;
                 border-radius: 10px;
-                background: black;
+                background: $plant4flower;
                 z-index: 4;
             }
         }
@@ -647,19 +668,19 @@
             }
 
             .stem1 {
-                background: red;
+                background: $plant4stem1;
                 width: 48px;
                 height: 72px;
             }
 
             .stem2 {
-                background: #9e0010;
+                background: $plant4stem2;
                 width: 42px;
                 height: 72px;
             }
 
             .stem3 {
-                background: #75000c;
+                background: $plant4stem3;
                 width: 26px;
                 height: 60px;
             }
@@ -675,7 +696,7 @@
                 width: 0px;
                 height: 0px;
                 border-radius: 10px;
-                background: black;
+                background: $plant4flower;
                 z-index: 4;
             }
 
@@ -700,19 +721,19 @@
             }
 
             .stem1 {
-                background: red;
+                background: $plant4stem1;
                 width: 58px;
                 height: 100px;
             }
 
             .stem2 {
-                background: #9e0010;
+                background: $plant4stem2;
                 width: 50px;
                 height: 100px;
             }
 
             .stem3 {
-                background: #75000c;
+                background: $plant4stem3;
                 width: 30px;
                 height: 94px;
             }
@@ -728,7 +749,7 @@
                 width: 10px;
                 height: 10px;
                 border-radius: 10px;
-                background: black;
+                background: $plant4flower;
                 z-index: 4;
             }
 
@@ -748,6 +769,12 @@
     }
 
     .plant5 {
+
+        $plant5petal: white;
+        $plant5petalinner: #ff8d0c;
+        $plant5petal5: #ffdf05;
+        $plant5stem: #00372b;
+        $plant5leaf: #1a640e;
 
         .stage-2 div, .stage-3 div, .stage-4 div  {
             transition: 0.5s;
@@ -769,7 +796,7 @@
                     position: absolute;
                     width: 0px;
                     height: 0px;
-                    background: beige;
+                    background: $plant5petal;
                 }
 
                 .petal1 {
@@ -807,14 +834,14 @@
                     position: absolute;
                     width: 14px;
                     height: 14px;
-                    background: beige;
+                    background: $plant5petal;
                 }
 
                 .inner-petal {
                     position: absolute;
                     width: 0px;
                     height: 0px;
-                    background: red;
+                    background: $plant5petalinner;
                 }
 
                 .petal1 {
@@ -879,14 +906,14 @@
                     position: absolute;
                     width: 20px;
                     height: 24px;
-                    background: beige;
+                    background: $plant5petal;
                 }
 
                 .inner-petal {
                     position: absolute;
                     width: 10px;
                     height: 20px;
-                    background: red;
+                    background: $plant5petalinner;
                 }
 
                 .petal1 {
@@ -911,7 +938,7 @@
 
                 .petal5 {
                     position: absolute;
-                    background: maroon;
+                    background: $plant5petal5;
                     border-radius: 2px;
                     width: 0px;
                     height: 0px;
@@ -960,14 +987,14 @@
                     position: absolute;
                     width: 24px;
                     height: 32px;
-                    background: beige;
+                    background: $plant5petal;
                 }
 
                 .inner-petal {
                     position: absolute;
                     width: 20px;
                     height: 30px;
-                    background: red;
+                    background: $plant5petalinner;
                 }
 
                 .petal1 {
@@ -992,7 +1019,7 @@
 
                 .petal5 {
                     position: absolute;
-                    background: maroon;
+                    background: $plant5petal5;
                     border-radius: 2px;
                     width: 20px;
                     height: 20px;
@@ -1032,6 +1059,11 @@
 
     .plant6 {
 
+        $plant6flower: #f79d8d;
+        $plant6leaf: black;
+        $plant6leaf3: #7a0b0b;
+        $plant6leafinner: #d47b19;
+
         .stage-2 div, .stage-3 div, .stage-4 div  {
             transition: 0.5s;
             -webkit-transition: all 0.5s linear;
@@ -1045,7 +1077,7 @@
                 width: 10px;
                 height: 10px;
                 border-radius: 30px;
-                background: black;
+                background: $plant6leaf;
             }
 
             .leaf1 {
@@ -1059,7 +1091,7 @@
             .leaf3 {
                 width: 0px;
                 height: 0px;
-                background: #7a0b0b;
+                background: $plant6leaf3;
                 transform: translate(0px, -85px);
                 z-index: -1;
             }
@@ -1068,7 +1100,7 @@
         .stage-2 {
             .flower {
                 position: absolute;
-                background: #f79d8d;
+                background: $plant6flower;
                 width: 4px;
                 height: 0px;
                 border-radius: 200%;
@@ -1094,7 +1126,7 @@
             .leaf3 {
                 width: 20px;
                 height: 30px;
-                background: #7a0b0b;
+                background: $plant6leaf3;
                 transform: translate(0px, -80px);
                 z-index: -1;
 
@@ -1102,7 +1134,7 @@
                     position: absolute;
                     width: 0px;
                     height: 0px;
-                    background: #ab5e2c;
+                    background: $plant6leafinner;
                     border-radius: 40px;
                 }
 
@@ -1119,7 +1151,7 @@
         .stage-3 {
             .flower {
                 position: absolute;
-                background: #f79d8d;
+                background: $plant6flower;
                 width: 6px;
                 height: 54px;
                 border-radius: 200%;
@@ -1131,7 +1163,7 @@
                 width: 18px;
                 height: 60px;
                 border-radius: 80% 80% 6px 6px;
-                background: black;
+                background: $plant6leaf;
             }
 
             .leaf1 {
@@ -1145,7 +1177,7 @@
             .leaf3 {
                 width: 24px;
                 height: 60px;
-                background: #7a0b0b;
+                background: $plant6leaf3;
                 transform: translate(0px, -80px);
                 z-index: -1;
 
@@ -1153,7 +1185,7 @@
                     position: absolute;
                     width: 2px;
                     height: 30px;
-                    background: #ab5e2c;
+                    background: $plant6leafinner;
                     border-radius: 40px;
                 }
 
@@ -1170,7 +1202,7 @@
         .stage-4 {
             .flower {
                 position: absolute;
-                background: #f79d8d;
+                background: $plant6flower;
                 width: 8px;
                 height: 100px;
                 border-radius: 200%;
@@ -1182,7 +1214,7 @@
                 width: 20px;
                 height: 78px;
                 border-radius: 80% 80% 6px 6px;
-                background: black;
+                background: $plant6leaf;
             }
 
             .leaf1 {
@@ -1196,7 +1228,7 @@
             .leaf3 {
                 width: 30px;
                 height: 80px;
-                background: #7a0b0b;
+                background: $plant6leaf3;
                 transform: translate(0px, -80px);
                 z-index: -1;
 
@@ -1204,7 +1236,7 @@
                     position: absolute;
                     width: 10px;
                     height: 60px;
-                    background: #ab5e2c;
+                    background: $plant6leafinner;
                     border-radius: 40px;
                 }
 

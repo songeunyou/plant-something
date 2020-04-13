@@ -147,17 +147,8 @@ var ColorList = [
         color: "#4E291A",
     },
     {
-        color: "#391D18",
-    },
-    {
-        color: "#7A0600",
-    },
-    {
-        color: "#A60013",
-    },
-    {
-        color: "#8C1F2A",
-    },
+        color: "#4d2924",
+    }
 ];
 
 export default ColorList
