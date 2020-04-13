@@ -26,7 +26,7 @@ class App extends Component {
 
         return (
             <div className="App">
-                {this.state.count >= 36 ?
+                {this.state.count >= 30 ?
                     <div className="love-it-container">
                         <div className="love-it-move-box">
                             <div className="love-it">I LOVE IT</div>
@@ -51,7 +51,7 @@ class App extends Component {
                     hover around
                 </div>
 
-                {this.state.count >= 36 ?
+                {this.state.count >= 30 ?
                     <div className="light-container">
                         <div className="light"/>
                         <div className="gradient-left"/>
