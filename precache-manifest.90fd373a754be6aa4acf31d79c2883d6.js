@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "9fa676cd11ffd884e2e0",
+    "revision": "c0ab938396d2caee96e8",
     "url": "/plant-something/static/css/main.14ac0987.chunk.css"
   },
   {
-    "revision": "9fa676cd11ffd884e2e0",
-    "url": "/plant-something/static/js/main.24383bf1.chunk.js"
+    "revision": "c0ab938396d2caee96e8",
+    "url": "/plant-something/static/js/main.6f4d7b7c.chunk.js"
   },
   {
     "revision": "fa4df43abfdbc4796574",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/plant-something/static/media/heart.38753e6c.png"
   },
   {
-    "revision": "c5f65dde7b461dec1d437cbfa678492c",
+    "revision": "0ac6edd56b733e6545e965dd9a0bd3ca",
     "url": "/plant-something/index.html"
   }
 ];
