@@ -4,7 +4,7 @@
 ### What to do
 Hover over the 6x6 plot area to lay down ground and grow plants to completion.
 
-![Screenshot of Plant Something](https://github.com/songeunyou/plant-something/blob/master/plant-something-endscreen.png)
+![Screenshot of Plant Something](https://github.com/songeunyou/plant-something/blob/master/plant-something-endscreen-alternate.png)
 
 ### Misc
 The plant graphics and animations were created in pure CSS ʕ•ᴥ•ʔ
