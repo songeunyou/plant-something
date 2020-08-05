@@ -4,6 +4,8 @@
 ### What to do
 Hover over the 6x6 plot area to lay down ground and grow plants to completion.
 
+[🌱 Try it out](https://songeunyou.github.io/plant-something/)
+
 ![Screenshot of Plant Something](https://github.com/songeunyou/plant-something/blob/master/plant-something-endscreen-alternate.png)
 
 ### Misc
