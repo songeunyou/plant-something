@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Plant from './Plant.js';
 
-import colorList from './ColorList.js';
+import colorList from './ColorListReduced.js';
 
 class PlantTile extends Component {
 
@@ -29,9 +29,9 @@ class PlantTile extends Component {
 
     randomColor() {
         const min=0;
-        const max=46;
+        const max=colorList.length - 1;
         const random = Math.round(Math.random() * (+max - +min) + +min);
-        var color = colorList[random].color;
+        let color = colorList[random].color;
 
         this.setState({
             color: color,

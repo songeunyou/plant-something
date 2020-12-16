@@ -44,7 +44,8 @@
 }
 
 .love-it {
-  margin-bottom: 26px;
+  font-size: 26px;
+  margin-bottom: -10px;
   color: white;
   position: relative;
   z-index: 10;
@@ -80,7 +81,7 @@
   height: 140%;
   top: -120px;
   transform: skewY(-30deg);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0), black, black);
+  background: linear-gradient(0deg, rgba(184, 227, 255, 0), #b8e3ff, #b8e3ff);
   z-index: 4;
 }
 .light-container .gradient-right {
@@ -90,7 +91,7 @@
   top: -120px;
   right: 0px;
   transform: skewY(30deg);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0), black, black);
+  background: linear-gradient(0deg, rgba(184, 227, 255, 0), #b8e3ff, #b8e3ff);
   z-index: 4;
 }
 .light-container .light {
@@ -306,7 +307,7 @@
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
-  background: #D9C3CB;
+  background: #CAB3BC;
   z-index: 1;
 }
 .image-card .top {

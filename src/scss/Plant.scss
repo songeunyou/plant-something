@@ -18,8 +18,8 @@
         $plant1flower: #f23b27;
         $plant1petal1: #ffe2b3;
         $plant1petal2: #ff7940;
-        $plant1stem: #00410f;
-        $plant1leaf: #1f933e;
+        $plant1stem: #FAACA8;
+        $plant1leaf: #9EA9F7;
 
         .stage-2 div, .stage-3 div, .stage-4 div  {
             transition: 0.5s;
@@ -210,11 +210,10 @@
     }
 
     .plant2 {
-
-        $plant2flower: #ebac00;
+        $plant2flower: #F7CE68;
         $plant2petal1: white;
-        $plant2petal2: black;
-        $plant2stem: #a85623;
+        $plant2petal2: #F543BD;
+        $plant2stem: #FB9D69;
         $plant2leaf: black;
 
         .stage-2 div, .stage-3 div, .stage-4 div  {
@@ -393,9 +392,9 @@
 
     .plant3 {
 
-        $plant3flower: #ffb733;
-        $plant3stem: #00372b;
-        $plant3leaf: #1a640e;
+        $plant3flower: #FFCF33;
+        $plant3stem: #FF5ACD;
+        $plant3leaf: #f587d6;
 
         .stage-2 div, .stage-3 div, .stage-4 div  {
             transition: 0.5s;
@@ -579,9 +578,9 @@
         transform: translateY(-80px);
 
         $plant4flower: black;
-        $plant4stem1: #015026;
-        $plant4stem2: #549e47;
-        $plant4stem3: #e0d479;
+        $plant4stem1: #EC2121;
+        $plant4stem2: #FF4F4F;
+        $plant4stem3: #FFCC70;
 
         .stage-2 div, .stage-3 div, .stage-4 div  {
             transition: 0.5s;
@@ -773,8 +772,8 @@
         $plant5petal: white;
         $plant5petalinner: #ff8d0c;
         $plant5petal5: #ffdf05;
-        $plant5stem: #00372b;
-        $plant5leaf: #1a640e;
+        $plant5stem: #FAACA8;
+        $plant5leaf: #DDD6F3;
 
         .stage-2 div, .stage-3 div, .stage-4 div  {
             transition: 0.5s;
