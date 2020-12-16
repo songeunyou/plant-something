@@ -72,9 +72,6 @@ var ColorList = [
         color: "#3B2E27",
     },
     {
-        color: "#160602",
-    },
-    {
         color: "#492010",
     },
     {
@@ -91,9 +88,6 @@ var ColorList = [
     },
     {
         color: "#97674C",
-    },
-    {
-        color: "#2F1A14",
     },
     {
         color: "#583A33",
@@ -127,9 +121,6 @@ var ColorList = [
     },
     {
         color: "#44251D",
-    },
-    {
-        color: "#25150B",
     },
     {
         color: "#533530",

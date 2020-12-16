@@ -29,8 +29,8 @@ class App extends Component {
                 {this.state.count >= 30 ?
                     <div className="love-it-container">
                         <div className="love-it-move-box">
-                            <div className="love-it">I LOVE IT</div>
-                            <div className="love-it">I LOVE IT</div>
+                            <div className="love-it">I love it</div>
+                            <div className="love-it">I love it</div>
                         </div>
                     </div>
                     :
@@ -40,11 +40,6 @@ class App extends Component {
 
                 <div className="image-section">
                     {tileArray.map(tile => <PlantTile countUp={this.countUp.bind(this)}/>)}
-                </div>
-
-
-                <div className="move-around">
-                    PLANT SOMETHING
                 </div>
 
                 <div className="hover-around">

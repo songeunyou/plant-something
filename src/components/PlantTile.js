@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Plant from './Plant.js';
 
-import heart from '../media/heart.png';
 import colorList from './ColorList.js';
 
 class PlantTile extends Component {
@@ -30,7 +29,7 @@ class PlantTile extends Component {
 
     randomColor() {
         const min=0;
-        const max=49;
+        const max=46;
         const random = Math.round(Math.random() * (+max - +min) + +min);
         var color = colorList[random].color;
 
